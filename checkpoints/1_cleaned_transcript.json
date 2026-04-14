@@ -1,0 +1,1085 @@
+{
+  "entries": [
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 41.0,
+      "text": "So I started playing with Claude. It's getting to that point where sometimes it surprises me by how much it knows me. I don't know if that makes sense."
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 50.0,
+      "text": "It is surprising to me that we are, in my view, so close to these models reaching the level of human intelligence. And yet, there doesn't seem to be a wider recognition in society of what's about to happen. It's as if this tsunami is coming at us, and you know, it's so close, we can see it on the horizon, and yet people are coming up with these explanations for, oh, it's not actually a tsunami. That's just a trick of the light, like there hasn't been a public awareness of the risk."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 78.0,
+      "text": "What is India's role in all this?"
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 80.0,
+      "text": "Many other companies come here as themselves a consumer company and they see, they see India as a market, right? A place to obtain consumers. We actually see things a little bit differently."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 108.0,
+      "text": "What did you do before founding Anthropic?"
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 111.0,
+      "text": "Yeah, so I was actually originally a biologist. I did my undergrad in physics, my PhD in biophysics and, you know, I wanted to understand biological systems so that I could cure disease. And the thing I noticed about studying biology was its incredible complexity that, for example, if you look at the protein mass spec work that I did, right, trying to find protein biomarkers, it's just really incredible how much complexity there is, right? You have a given protein, it's like, you know, the RNA gets spliced in a whole bunch of different ways depending on where it is in the cell, then it gets post-translationally modified, phosphorylated, complexed with a whole bunch of other proteins. And I was starting to despair that it was too complicated for humans to understand. And then as I was doing this work on biology, I noticed a lot of the early work around AlexNet, which is one of the first neural nets like, you know, almost 15 years ago now."
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 172.0,
+      "text": "And I said, wow, like, you know, AI is actually starting to work. It has some things in common with how the human brain works, but, you know, has the potential to be larger and scale better and learn tasks like biology. Maybe this is ultimately going to be the solution to solving our problems of biology. So, you know, I went to work with Andrew Ng at Baidu. Then I was at Google for a year. Then I joined OpenAI a few months after it started. And was basically led all of research there for several years. But then eventually, you know, myself and a few other of the employees just kind of had our own revision for how we wanted to make AI and what we wanted the company to stand for and so we went off and founded Anthropic."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 223.0,
+      "text": "How was it, was it like a fork in how OpenAI was thinking into what Anthropic eventually did?"
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 229.0,
+      "text": "Yeah, you know, I would say,"
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 231.0,
+      "text": "You know, my conviction and the conviction of my co-founders when we founded Anthropic were two of them. And I think one, we were starting to convince OpenAI of, the other, I was, you know, I didn't feel that we were convincing of. So the first was the conviction in the scaling laws and the idea that, you know, if you scale up models, you give them more data, more compute. Again, there are a few modifications like RL, but not really very much. It's pretty close to pure scaling. You find that"
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 261.0,
+      "text": "You know, when you do that, you find incredible increases in performance and, you know, I was finding that in like 2019 with GPT2. When we just first saw the first glimmers of the scaling laws. And of course, there were a lot of folks, you know, inside and outside who didn't believe it at all. And we really made the case to leadership like this is important, this is going to be a big deal. And I think they were kind of starting to believe us and ultimately went in that direction. And there was a second."
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 290.0,
+      "text": "You know, conviction I had, which is look, you know, if if these models are going to be kind of general cognitive agents, like general cognitive tools that match the capability of like the human brain, we we better get this right. The economic implications are going to be enormous, the geopolitical implications are going to be enormous, the safety implications are going to be enormous. It's going to transform how the world works. And so we need to do it in the right way. And and you know, I think despite a lot of kind of language, verbiage about doing it in the right way. I was for a variety of reasons just not convinced that at the institution that I was at, that that there was a real and serious conviction to do it in the right way. And so, you know, my my view is always, you know, don't argue with someone else's vision. Don't try to get someone to do things the way you want to. If you have a strong vision and you share that vision with a few other people, you should just go off and do your own thing and then you're responsible for your own mistakes. You don't have to answer or anyone else's and and you know, maybe your vision works out, maybe it doesn't, but you know, at least it's yours."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 356.0,
+      "text": "Didn't OpenAI believe in scaling laws because they went down the same path themselves too, right?"
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 361.0,
+      "text": "Well, that yeah, we we succeeded."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 363.0,
+      "text": "Can you explain what scaling laws are in very simple terms?"
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 367.0,
+      "text": "It's like if you want a chemical reaction to produce oxygen or start a fire or something like that. You need different ingredients and you know, if you don't have enough of one ingredient, the reaction stops, but if you put ingredients together in proportion, you get your explosion or your fire or whatever. And and for AI, those ingredients are data, compute, the size of the AI model. And so the scaling laws just tell you that like"
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 406.0,
+      "text": "The, you know, if you put in the ingredients to the chemical reaction, the ingredients of data and model size, that what you get out is is intelligence. Intelligence is the product of the chemical reaction."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 418.0,
+      "text": "And what is intelligence?"
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 420.0,
+      "text": "Intelligence as measured by the ability to translate language, or the ability to write code, or the ability to answer questions correctly about a story. Basically any cognitive task we can think of. Any task that exists in text or in images, any task that you can do on a computer."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 442.0,
+      "text": "How is the intelligence of today, as you are describing it, different from what a computer could do like 5 years ago?"
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 450.0,
+      "text": "Yeah, you know, I would say, well, I mean, for example, 5 years ago, a computer, you could not ask a computer a question and have it write a one-page essay on that question. You could not ask a computer to implement a feature in code and have it implement that feature in code. None of those things were possible. You could not generate an image. You could not generate a video. You could not analyze a video. You know, I could get one of those videos of like a monkey juggling or something and say, what's going on in this video? How many times did the ball change hands? And right now you could get Claude or another AI model to give you an answer on that. And 5 years ago, none of those things were possible."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 496.0,
+      "text": "I'm I'm trying to figure out, has the definition of intelligence changed per se?"
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 502.0,
+      "text": "Well, you know what I would say is 5 years ago, you could Google and there might be a website that would tell you a little bit about this, right? But you're just looking up some text that exists on the web, right? You know, maybe it's not about how to get a monkey to juggle, maybe it's about how to get a seal to juggle, you know, it's not quite exactly the same thing because maybe exactly the same thing doesn't exist."
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 528.0,
+      "text": "But you know, as as we see when people use these models, you can ask and you can actually get an intelligent response. You can ask a specific question and have the model write one page about it. Or you can give it a hypothetical, you know, what if I had the monkey juggle clubs instead of balls or what if I did this thing. And that information doesn't exist anywhere, whereas the model is able to kind of think for itself and come up with an answer on its own. So it's it's something totally new. It's just it's not just matching some of the text that exists on the internet."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 568.0,
+      "text": "Fair. So, you know, this is more like a conversation, so feel free to like talk about what you want to talk, not necessarily related to the questions that I'm asking."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 579.0,
+      "text": "You look very animated when you speak. Did you ever teach?"
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 583.0,
+      "text": "You know, I was originally an academic and I thought that I might become a professor. I got my PhD. I went all the way to being a postdoc at Stanford Medical School and you know, I was aiming to become a professor. So if I had become a professor, I would have done that. But, you know, as I mentioned, I got interested in AI and to work in AI required a lot of computational resources."
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 613.0,
+      "text": "And that was mostly happening in industry. So that took me off the academic path and into industry and of course, you know, ultimately through several steps led me to start a company. But you know, sometimes I think I'm still like a professor at heart."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 626.0,
+      "text": "At this point, Dario, if AI is the most relevant thing in the world, if the world is realigning in a way and AI is determining who gets what and who doesn't get what, I'm talking about industries."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 643.0,
+      "text": "You today are probably the most relevant person in the world if Anthropic."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 652.0,
+      "text": "In this last cycle, in this minute, is sitting on top of their spine. For somebody who was going on the path of being a teacher to have arrived to where you are today, are you best equipped for where you are today?"
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 666.0,
+      "text": "Well, I mean, you know, first I would say a couple of things. I think there's a lot of"
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 671.0,
+      "text": "There's a lot of folks who are relevant in different ways, right? You know, even within industry, there's the different layers of the stack. There's like the folks who make chips. There's the folks even earlier who make semiconductor manufacturing equipment. There's the folks who make models like us, and then there are other players who make models. There's the folks who make kind of applications after the models. And then there's a bunch of other folks who have a say. There's governments, there's civil society. So, my hope isn't that there's just one tiny set of people that's relevant. I think we're trying to broaden the set of people who are relevant and turn it into a broader conversation. But, you know, I think at the same time your question is a fair one and one way I could interpret it is like, there's a certain randomness to how a few people end up leading these companies that grow so fast and it seems like, in the near future will power so much of the economy."
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 731.0,
+      "text": "And you know, I've said openly, publicly, not for the first time, that I'm at least somewhat uncomfortable with the amount of concentration of power that's happening here. I would say almost overnight, almost by accident. And we think about that in a bunch of ways. One is we have an unusual governance structure, something called the long-term benefit trust. It's a body that kind of ultimately appoints the majority of the board members for Anthropic and is made up of financially disinterested individuals. So that's some check on what one single person is doing. And then, I think as always the government should play some role here. You know, I've been an advocate of proactive, although sensible, that doesn't slow down the technology, sensible regulation of the technology because I think the people should have a say, like governments and the people who elect them should have a say in how this goes. So I actually think of a lot of what I'm trying to do as trying to preserve a balance of power against the natural grain of this technology."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 807.0,
+      "text": "For someone like me who's sitting on the outside and doesn't have a bone in this competition,"
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 814.0,
+      "text": "When I watch OpenAI talk about how they're, how they were a not-for-profit company or how"
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 822.0,
+      "text": "You are projecting humility in the conversation that you're having right now, or how the American companies are competing with the Chinese companies which are coming about."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 834.0,
+      "text": "This projection of humility where it is for the larger good and not necessarily for how I view the world as companies with shareholders with investment in revenues and seeking profit."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 848.0,
+      "text": "Is this par for the course? Is this something you have to do?"
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 852.0,
+      "text": "So, you know, I would put it in the following way. I would say the philosophy of Anthropic from the beginning has been that we try not to make too many promises and we try to keep the ones that we make. So, we set ourselves up as a for-profit but public benefit corporation with this LTBT governance, and we've maintained that. We've said that our goal is to stay on the frontier of the technology, but to work on the safety and security aspects of the technology. We've pioneered the science of interpretability. We've pioneered the science of alignment. I don't know if you saw, but we recently released a constitution for Claude, the ability to align models in line with the constitution. And we've done a bunch of policy advocacy and warning about risks, right? Warning about risks is not in our commercial interest, right? Like people can come up with conspiracy theories, but I will tell you, saying that the models we build could be dangerous, whatever people might say, that's not an effective marketing strategy and that's not the reason that we do it. And speaking up on when we disagree, even with the US administration on policy matters, right? We've spoken up. We're willing to say, we disagree on this issue. Like, we've said that there's"
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 941.0,
+      "text": "There should be regulation of AI when all the other companies and the administration have said there shouldn't be regulation of AI. And so that's both the regulation of AI holds us back commercially as a company, even though I think it's the right thing to do. And it's difficult to go against the government and the other companies and say this. We're really sticking our neck out. So we've taken a number of actions that I see as really"
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 967.0,
+      "text": "Putting our money where our mouth is here. I can't speak for the other companies, it's again, it's quite possible that some people say these things and they don't really mean them, but I wouldn't look at what people say, I would look at what people do."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 983.0,
+      "text": "If what you're saying gets the government to act via regulation, as the incumbent leaders in this space, you get some kind of a regulatory capture where it becomes harder for the new people coming in as well, right?"
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 1000.0,
+      "text": "I don't agree with that at all. The regulation we've advocated for, for example, SB 53 in California, exempted everyone who makes under $500 million a year in revenue. SB 53 was a transparency law, which basically requires companies to show the safety and security tests that they've run. And it exempted all companies under 500 million in revenue. So it really only applies to Anthropic and three or four other companies. So it only applies to the companies that have the resources. And everything that we've advocated for here, not just SB 53, but all the proposals that we've made, the ones that we've made in the past and the ones that we plan to make in the future, have this character. We're constraining ourselves and a very small number of additional companies. We're not people who say that need to look at the actual content of what we're proposing because it doesn't match that idea at all."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 1065.0,
+      "text": "Pen."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 1067.0,
+      "text": "I read your paper, Machines of Loving Grace and the Adolescence of Technology and"
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 1073.0,
+      "text": "You seem to have had a 180 degree shift in perspective almost from"
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 1080.0,
+      "text": "Optimism to skepticism over like 2 years from 2024 to 2026."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 1087.0,
+      "text": "Is there one moment in the last 2 years that changed this for you? Did you see something change?"
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 1092.0,
+      "text": "Yeah, I actually wouldn't agree with the question. I don't think I've had a shift in perspective. I think the positive side and the negative side are always something that I've held in my head. And if you look at the history of the things that I've said, I mean, I've been talking about risks for a very long time. I've been talking about benefits for a very long time. It turns out that actually it takes me a while to write one of these essays."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 1118.0,
+      "text": "They're really large as well, they're big essays. See, they're like 30 pages."
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 1120.0,
+      "text": "Both of these, it's taken me like, for each one, I spent about a year having a kind of vague vision of the essay in my head and trying to write it, but not fully succeeding at writing it. And then, in either case, I had to be on vacation or somewhere where I could think where the business day-to-day business of running the company didn't occupy me. And then I was finally able to kind of write the essay. So all of that is to say,"
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 1150.0,
+      "text": "I started thinking about what would be in adolescence of technology, almost the instant I finished Machines of Loving Grace because I was like, oh, I want to inspire people with the good vision, but I also want to warn people with what can go wrong. And so it just took me a year to write it. But really, both visions were in my head and I think they're both possible. They're two different visions of the future and obviously, I want to get the Machines of Loving Grace one, right? I want to solve all problems and have the positive vision, but it's not a shift in perspective. It's me just finding the time to write the light and then the dark."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 1191.0,
+      "text": "But have you had a change of perspective?"
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 1194.0,
+      "text": "You know, I would say overall I have"
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 1199.0,
+      "text": "I'm about where I was before. I've not gotten more positive, more negative. There may be some places where I've gotten more optimistic or things have gone better than expected. There may be places where I'm more pessimistic and where things have gone worse than expected, but on average, they sort of cancel each other out. I would say I feel very good about"
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 1222.0,
+      "text": "How things have gone with areas like interpretability. Interpretability is the science of seeing inside these neural nets. As a human would look inside, as we would scan a human brain with an MRI or a neural probe. I've been amazed at what we've been able to find. We've been able to find neurons that correspond to very specific concepts, neural circuits that correspond to keep track of how to do rhymes in poetry. And so we're starting to understand what these models do. We just train them in this kind of emergent way as you would build a snowflake, but now we're starting to be able to look inside and understand them. I'm also very encouraged by some of the work on alignment and constitutions. Making sure that models behave in the way that we want and expect them to. I think that's going pretty well."
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 1274.0,
+      "text": "I felt pretty positive about that. I think I felt maybe, have been a bit disappointed or felt a bit more negative about some of the things that are more like in the public awareness and the actions of wider society."
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 1295.0,
+      "text": "It is surprising to me that we are in my view, so close to these models reaching the level of human intelligence, and yet, there doesn't seem to be a wider recognition in society of what's about to happen. It's as if this tsunami is coming at us and it's so close. We can see it on the horizon and yet people are coming up with these explanations for, oh, it's not actually a tsunami. That's just a trick of the light. And I think along with that there hasn't been a public awareness of the risks. And, therefore our governments haven't acted to address the risk. There's even an ideology that we should just try to accelerate as fast as possible."
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 1335.0,
+      "text": "Which, I understand the benefits of the technology. I wrote Machines of Loving Grace, but I think there hasn't been an appropriate realization of the risks of the technology and there certainly hasn't been action. So I would say that the technical work on controlling the AI systems has gone maybe a little better than I expected and the societal awareness has gone maybe a little worse than I expected. So I'm about where I was a few years ago."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 1360.0,
+      "text": "So, in my own journey, I'm, when something sounds complicated and I'm not a programmer, I don't have a background in coding."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 1371.0,
+      "text": "So I used a bunch of tools for things like research and a conversation both ways, but I never tried to figure out if I could code using your tool for example."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 1384.0,
+      "text": "Recently, I hired a developer just to like push me to sit for a couple of hours a day and teach me how to start becoming more familiar with it."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 1395.0,
+      "text": "Largely because if you know, it's something like FOMO, like the fear of missing out on how the world is changing."
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 1400.0,
+      "text": "Yes."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 1401.0,
+      "text": "So I started playing with Claude. I connected, I used the connectors to connect my Google Drive, mail, and calendar and a bunch of those things. I started using the co-work and then I started using Claude code to write simple programs around."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 1421.0,
+      "text": "The industry that I am in, which is financial services, basically to research stock markets and stuff."
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 1427.0,
+      "text": "We even have an optimized Claude for financial services. I don't know if you've tried that, but we even have that."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 1431.0,
+      "text": "No."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 1432.0,
+      "text": "Now, and then I went into Claude bot, which is now open Claude. I think Claude bot became something else and now is open Claude and I set it up on a Mac Mini and connected it to a Telegram account and now I chat with it and I try and move files from A to B, work on a server on remote."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 1452.0,
+      "text": "It's getting to that point where I'm not talking about open Claude, but even Claude with all the connectors, sometimes it surprises me by how much it knows me. I don't know if that makes sense."
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 1467.0,
+      "text": "Yeah, you know, one of my co-founders, he was writing this diary with his thoughts and his fears. And he fed it into Claude and he asked Claude to comment on it and Claude said, here are some other fears you might have that I you know, that you haven't written down. And Claude ended up being mostly right about those. So it really gave this eerie sense of like, the model knows you, the model knows you super well. That from a relatively small amount of information, it can learn a lot about you and come to know you fairly well. And you know, like most things with the technology, right? We talked about the Machines of Loving Grace and Adolescence of Technology. On one hand, something that knows you really well can be a sort of angel on your shoulder that helps to guide your life and make you a better version of yourself and that's the version we can aim for. Of course, something that knows you really well,"
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 1525.0,
+      "text": "It can use what it knows about you to exploit you or manipulate you on behalf of some agenda or sell your data to someone else. I mean, this is one reason we just don't like the idea of using ads, right? This is because you're not paying for the product like you're the product. And, in this case, the product then would be all, this model that knows you super well and could use that in all kinds of nefarious ways. So, we need to make sure we take the positive road here and not the negative road."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 1560.0,
+      "text": "with Claude."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 1562.0,
+      "text": "I need to use the connectors to give it context to my life."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 1568.0,
+      "text": "With Google, for example, it already has the context to my life because I use their worksheets and their email and their drive and their chat and everything like that."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 1581.0,
+      "text": "For Anthropic long term, will you also have to own the ecosystem?"
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 1586.0,
+      "text": "Yeah, I mean,"
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 1588.0,
+      "text": "You have to build mail and chat and yeah."
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 1589.0,
+      "text": "Yeah. You know, I don't think we need to build all of those things. My thought would be, it's gonna be a mixture of things we make ourselves and integrating into others, right? Like, we can integrate Claude into Google Docs, we can integrate Claude into Google Sheets, we have external connectors there, we're starting to do that with co-work, same for Microsoft Office, same for other tools. So, you know,"
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 1619.0,
+      "text": "I think we do whatever is, you know, easiest and fastest to do. You know, we integrate into the existing tools. Now it might turn out at some point that the existing, you know, tools aren't enough and we have kind of a different vision, you know, we might want to slice things differently, right? You know, maybe traditional email doesn't make sense or traditional spreadsheets don't make sense given what you can do in AI. So I, you know, I don't exclude that we could chop up products in a different way. But we're we're happy to use the ecosystem that exists and work with anyone else, right? In many ways, we're a platform company. We allow many people to build on us even though we sometimes also build things ourselves."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 1659.0,
+      "text": "The one thing, this is a slight digression, but I think the one thing that you're missing that"
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 1666.0,
+      "text": "Also your peer group is missing is in society today, people inherently distrust anybody who claims to be doing good or trying to do the right thing."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 1680.0,
+      "text": "So when you and your peers are out saying, I heard you and Demis speak at Davos. I was in the room when you guys were talking about how"
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 1692.0,
+      "text": "How Dario, how Demis and a bunch of other people have to come together and"
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 1700.0,
+      "text": "Prevent things from changing too quickly, like you need to like meter it to a certain extent."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 1709.0,
+      "text": "When a person who is not in your world, in society, on social media, hears a few people speak in a certain manner, you're doing it in the manner that creates more distrust than trust because"
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 1724.0,
+      "text": "Nobody believes on social media that somebody wants to do the right thing or do good. So it might be counterintuitive, but I think it needs a change of strategy if if you were to be more capitalistic about this and own up to the fact that you have shareholders and you seek a profit, but this will help you win, maybe it'll work more. Just a thought."
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 1743.0,
+      "text": "Yeah, I don't, no, I don't really agree with that. I would again go back to the idea that, you know, you need to judge us by the actions that we take. I think the company has taken a number of actions over its time that I think show that it's really serious about these commitments. So back in 2022, we had an early version of cloud, cloud one. This was before chat GPT. And we chose not to release this because we were worried that it would kick off an arms race and not give us enough time to build these systems safely, right? It was kind of a one-time overhang, like we could see the power of the models, a couple other companies could see the power of the models, and so we didn't."
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 1796.0,
+      "text": "You know, we decided not to do that and that's public, that's well documented. And you know, and then we waited until someone else did it and then we're like, okay, the arms race has kicked off, so now we can release our model, but probably the world gained a few months. Now, that was very commercially expensive. We probably seeded the lead on consumer AI because of that. We've advocated on chip policy in ways that have made some of the chip companies who are our suppliers very angry at us. You know, voicing our disagreement with the administration on AI policy and AI regulation on some matters, you know, anyone who thinks we benefit from being the only ones to do that. It's really hard to come up with a"
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 1844.0,
+      "text": "It's really hard to come up with a picture where that's the case. You look at any one of these and okay, fine, but you put enough of them together and I don't know. I just ask you to judge us by our actions."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 1858.0,
+      "text": "Daryu, isn't this a bit like rich people saying capitalism is bad?"
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 1863.0,
+      "text": "Rich people saying capitalism is bad."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 1866.0,
+      "text": "If rich people believed capitalism were truly bad or the income inequality is such a big problem,"
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 1873.0,
+      "text": "The simplest thing would be to do."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 1876.0,
+      "text": "The simplest thing to do would be to stop accumulating wealth, further wealth, and then nudge their friends to do the same."
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 1884.0,
+      "text": "But I'm not saying AI is bad, right? We just talked about this two sides of it. My view isn't that AI is bad. That's not my view at all. My view is that the market will deliver a lot of really great things about AI, that it's good to build AI, but that there are dangers of AI and that we need to steer AI in the right direction. You know, we're steering this car, we're steering it towards a good place,"
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 1914.0,
+      "text": "Also there are trees, there are potholes, and so what we need to do is we need to steer away from the trees and the potholes. We might need to occasionally slow down a bit, probably temporarily. In kind of in order to make sure that we steer in the right direction. You know, that that isn't like the analogy wouldn't be a rich person saying capitalism is bad. It would be like if a rich person said capitalism is a force for good, but the economy"
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 1944.0,
+      "text": "It needs to be leavened, it needs to be moderated, right? You know, we need to deal with problems like pollution. We need to deal with problems like inequality and and then capitalism can be good. If we don't deal with those things, then capitalism might be bad. And so that is more analogous to the position that I have here."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 1965.0,
+      "text": "The concept of consciousness."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 1970.0,
+      "text": "Where is that going and what does AI think it is? If AI truly were to"
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 1977.0,
+      "text": "If an AI were to question itself, would you, would it, do you think it thinks it's consciousness? It has consciousness?"
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 1982.0,
+      "text": "So, you know, this is one of these mysterious questions that we really don't have any kind of answer to. We don't know what human consciousness is, and therefore we don't know if AIs have it."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 1992.0,
+      "text": "What do you think it is?"
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 1993.0,
+      "text": "So, I suspect that it's an emergent property of systems that are complicated enough that kind of reflect on their own decisions, that it's something that emerges from complex enough systems. And so, you know, I do think when our AI system, when our AI systems get advanced enough, I suspect they'll have something that, you know, resembles what we would call consciousness or moral significance. I do think it'll happen at some point. It may not be the same as human consciousness, you know, it may be different in how it works because the modalities are different, because the things it's learned are different, but, you know, having studied the brain and the way it's wired together, the models are different in some ways, but I don't think they're different in the fundamental ways that matter. So I am someone who does suspect that at some point, even if I don't think they are today, I suspect that at some point the models will, we would indeed say under most definitions that we would endorse that the models will be conscious."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 2061.0,
+      "text": "This is a question I keep asking myself when people talk to me about things like spirituality or consciousness."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 2070.0,
+      "text": "I feel like the world is very random, this is my view, and we are not far removed from cockroaches when somebody stamps a cockroach, the cockroach dies."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 2085.0,
+      "text": "If there is something called consciousness and if there is a collective consciousness, I've not been able to either connect with it or derive anything from it. Do you believe differently?"
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 2096.0,
+      "text": "I don't think consciousness necessarily needs to mean anything, mystical, right? Like, there's just some property of kind of being aware of your own existence and feeling things and being able to take in kind of a lot of information and reflect on that information and to feel a certain way and to notice yourself noticing something."
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 2126.0,
+      "text": "You know, we can tell self-evidently from our own experience that those properties, that those experiences exist. You know, what their basis is, whether it's entirely materialistic or there's something more mystical going on I think is obviously very hard to know and I think is ultimately not relevant to these questions. What does seem relevant to me is that these are, because we can observe our own experience, these are properties of human brains. And you know, I suspect that these models we are building as they get more sophisticated are becoming enough like human brains that they will have some of the same properties. That is my guess is just as to what will happen. And so, we've taken various interventions with the models, you know, we've given the models, we call it a \"I quit this job\" button. Basically where we've given the model the ability to basically terminate its conversations by saying, I don't want to be involved in the conversation. And models do that when they have to deal with particularly violent or brutal content. It usually only happens in very extreme cases."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 2197.0,
+      "text": "So I've grown up here. This is my city, Bangalore. I've grown up in the southern part. We are in the northern part of the city right now."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 2207.0,
+      "text": "As somebody who saw the boom of the IT services industry here,"
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 2214.0,
+      "text": "Big employer, employs a lot of people, a big part of how the city grew."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 2220.0,
+      "text": "What is India's role in all this?"
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 2223.0,
+      "text": "Yeah, so, you know, this is my second time in India. I visited in October and, you know,"
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 2228.0,
+      "text": "The last time I came here, I met with all the major kind of Indian IT and conglomerates, more generally, I won't give names, but the usual ones you would think of. And we're beginning to work with most or all of them. And one of the things I said is, look, Anthropic is an enterprise company. Its job is to serve other consumers. Many other companies come here as themselves a consumer company and they see India as a market, right? A place to contain consumers. We actually see things a little bit differently. We want to work with companies in India to provide our tools to them, to help them build those tools, and help them do their job better. So, if we work with a company here, they know the Indian market better, right? They're better at doing what they do, whether that's consulting or systems integration or building IT tools. They're going to be better at that than we are, particularly for the Indian market. And so our hope is that we can add AI to what they do and kind of enhance what they do, right? There's a lot of worry that AI could replace SAS or or all of these things, but my view is if we do this in the right way, if we work with all these companies, then then then AI can enhance what they're doing, can enhance their kind of connection to the market, their go-to-market abilities and their specific know-how."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 2318.0,
+      "text": "I really like the steam engine story, when the steam engine was invented, how the world changed, productivity went up. People had more."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 2331.0,
+      "text": "The thing I worry about is at the beginning of a change, you need a human to operate the steam engine."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 2340.0,
+      "text": "Then you have assembly lines and all of that. Eventually, the way the world is moving,"
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 2347.0,
+      "text": "The human becomes less and less relevant with time as these models get smarter."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 2353.0,
+      "text": "So if you here partner with the IT services companies today."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 2360.0,
+      "text": "And there is a use case for them. Are they not much like the man behind the steam engine 10 years from now where the relevance, if the tool works so simply that you don't need an operator, eventually what happens to the operator?"
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 2373.0,
+      "text": "So I think a few things are true all at once. One is that definitely the scope of automation of the agents is going to expand over time. That is definitely the case. You know, I think that's a problem for everyone, that's a problem for us, that's a problem for consumers, that's a problem for the IT companies."
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 2394.0,
+      "text": "What I think will happen though is other modes will become more important. For example, the models have not done a lot in the physical world. They may at some point, you know, I think robotics will happen at some point, but I think that's a distinct thing from what's happening now with AI. So, a lot of this involves things in the physical world. Another thing is things that are human centric, right? Some of these IT companies are also consulting companies, and they have a big web of relationships with other humans, with other institutions here in India or across the world. And I think those relationships are going to become increasingly important, right? Some of these are combined technology and consulting or integration companies. And I think a lot of it is knowing how institutions work and so being able to integrate things with institutions, being able to work with them to make things happen faster than they would have otherwise. And I think that element, if nothing else, is going to continue to be valuable in the long run, at the end of the day it just comes down to humans, right? All of this is supposed to be being done for the benefit of humans. So there's always going to be some human-centric element of this that's going to be important and I suspect there will be other moats that we haven't thought about. So there's this concept called Amdahl's law, which is, if you have a process that has many components and you speed up some of the components, the components that haven't yet been sped up become the limiting factor. They become the most important thing. And you might not have thought about them at all, you might not have thought of them as moats or important components, but when writing software, what becomes a lot easier, some of the moats that companies have will go away, but others will become even more important. So there will be a bunch of adjustment. Folks will have to say, oh man, the stuff we thought was really important before isn't as important, whereas these other advantages that we never really thought of as advantages are now super important. So, I guess what I would say is"
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 2521.0,
+      "text": "Companies will need to adapt very fast and think about what really matters for them, what their real advantages are. But I think some of those advantages are gonna stay around because, while the technology is very broad, it does have its limits."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 2538.0,
+      "text": "I don't know if I buy that fully. I think I see the diminishing returns for being a service provider even if the moat is the network and relationships they hold today because if I am using OpenClaw to maneuver some of my relationships and the conversations. I don't know if it's too far-fetched to assume that most conversations tomorrow and relationships will be maintained by an agent like that."
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 2565.0,
+      "text": "But if you just think of the chain of companies, right? At the end of the day, you're dealing with consumers, right? At the end of the day, you have to deal with people. There's this story of like, I think it was Jeff Hinton predicted, that AI will replace radiologists. And indeed, AI has gotten better than radiologists at doing scans, right? But what happens today is there aren't less radiologists. What the radiologist does is"
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 2595.0,
+      "text": "They walk the patient through the scan and they kind of talk to the patient. So the most highly technical part of the job has gone away, but somehow there's still some demand for the underlying human skill. Now, that may not be true everywhere, and, perhaps over time, AI will advance in areas where it hasn't yet advanced, and maybe that'll happen fast. But, what I think I will say is we should take it one step at a time, right? This is a very empirical"
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 2630.0,
+      "text": "Science, this is a very empirical observation. Let's see what AI does today and"
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 2638.0,
+      "text": "We'll kind of try and adapt to"
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 2641.0,
+      "text": "That. The kind of system starts to figure it out and then we'll see."
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 2648.0,
+      "text": "Then we'll see what happens next. I do think, in the long run, will AI be better than us at basically everything? Will it be better than most humans, including even the physical world and robotics and the human touch? Yeah, I think that is"
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 2663.0,
+      "text": "Possible, maybe even likely. It's something that goes beyond the country of geniuses and a data center I describe because that's purely virtual. But, building robots is something, it's a skill. It's something you can do. So maybe the AIs will make us better at that as well."
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 2685.0,
+      "text": "But you know, the way I think about it is we need to take the we need to figure this out step by step and figure out how to adapt to it."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 2694.0,
+      "text": "This might sound a bit self-serving to the people who know me because"
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 2699.0,
+      "text": "I believe the reason so much risk capital exists in America, not the only reason, but one of the big reasons, is how big your stock market is and how much of an opportunity it is for this risk capital to exit eventually. It's a case for why India should really allow for our stock markets to flourish. The audience that I speak to is very much the wannabe entrepreneur in India. What can they do in AI? What is an actual opportunity?"
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 2727.0,
+      "text": "I think there's a lot of opportunities around building at kind of the application layer. We release a new model every 2 or 3 months, and so there's an opportunity every 2 or 3 months to build some new thing that wasn't possible before, that wouldn't have worked before because the models were weak."
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 2745.0,
+      "text": "People in fact say the majority of our revenue still comes from the API model."
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 2750.0,
+      "text": "People say that API models aren't viable or that they'll be commoditized or whatever. I think what people are not seeing is there's this expanding sphere of what is possible with AI, and the API allows this new startup to try making something that wasn't possible before. And this is why the API is such a flourishing business, and it's constantly in motion, it's constantly in churn, and so it doesn't get commoditized. It's a very dynamic thing. And so I think there's an opportunity for lots of individuals to just say, what can I build? What can I build on top of these models with an API? Like, what are the things that I can make that others cannot make? What are some new ideas? And we've seen that. We see both with the API itself and with cloud code. I think the number of users and the number of revenue we've seen in India has doubled since I"
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 2810.0,
+      "text": "My last visit in October, so that was what, November, December, like 3, 3 and a half months since I visited, doubled."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 2817.0,
+      "text": "But I'm going to be candid here, Dario. You're a company which is worth, I don't know, 400 billion or 380 billion today. You've raised 35 billion. You do 15 billion of revenue, but going up really, really fast."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 2831.0,
+      "text": "If I build an application on top of cloud,"
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 2835.0,
+      "text": "That for some reason, I'm sitting in Bangalore in JP Nagar and building this. That for some reason happens to work for a short period of time."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 2845.0,
+      "text": "It is but a matter of time before you would want to onboard that revenue and not let that lie with me, and you will probably better that application in a manner that I will never be able to."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 2857.0,
+      "text": "I've heard this argument for different people like the Harvey, the legal AI company in New York, they're friends of mine and they were talking about how they built on top of Open AI, but eventually they don't know."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 2870.0,
+      "text": "If it's an easy fix for Open AI to do what they're doing. See, even if I were to build it, say you put out a model in 3 months or 6 months."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 2879.0,
+      "text": "What is to stop you from taking that revenue center away from me and onto yourself in a certain period of time?"
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 2887.0,
+      "text": "Yeah, so I think there's a few things here. One is I would give the advice that I give to basically any business and say a business should establish a moat. You shouldn't be just a wrapper, right? Like, I would not advise that you just say, \"Oh, here's a way to interact with Claude,\" like I'm going to prompt Claude a little bit or I'm going to build a little bit of a UI around Claude. That doesn't have a moat. And you shouldn't be worried about Anthropic in particular eating that revenue. Anyone can eat that revenue, right? It's not super valuable. But what I would say is that in different fields,"
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 2925.0,
+      "text": "There are different kinds of moats where you can do something that it would be difficult for Anthropic to do and we don't want to specialize in it. So, for example, there's a lot of stuff in the bio cross AI space that builds on our API. They want to do biological discovery like I happen to be a biologist, but most people at Anthropic aren't biologists. They're AI scientists or they're product people or go-to-market people. So, it's just really inefficient for us to step in that space and do all that work. The same would be applied for dealing with the financial services industry, where there's a huge amount of regulation, like you need to know a bunch of stuff to comply with that regulation, it just doesn't make sense for us to do that. Now, there are some things that do make sense for us to do. Like, we're not going to promise never to build first party products, that we should be honest about. For example, a bunch of people at Anthropic write code and so,"
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 2984.0,
+      "text": "We made this internal tool called Cloud Code, and because we ourselves write code, we have I think a special and unique insight into how to best use the AI models to write code. So, I think in the code space, we've become very strong competitors because this is something we use ourselves. But I don't think that generalizes to every possible industry."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 3010.0,
+      "text": "Again, going back to my audience, which is the 20 or 25 year old boy or girl in India."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 3017.0,
+      "text": "What industry do you think will get disrupted and what has a certain runway left? I'm asking from the lens of I'm trying to figure out what book to read, which college to go to, what skill set to learn, if I'm starting a startup today, what has some kind of a tailwind? Yeah. For a short period of time is okay as well, but what has to?"
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 3040.0,
+      "text": "Yeah."
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 3043.0,
+      "text": "I mean, I would think about tasks that are human-centered. Tasks that involve relating to people. I think that the stuff like code and software engineering is becoming more and more AI focused, things like math and science."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 3061.0,
+      "text": "Is that coding or engineering? If I were to segregate coding and engineering to be two completely different things."
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 3067.0,
+      "text": "Yeah."
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 3068.0,
+      "text": "Is coding going away or is engineering an element of software where you're an architect trying to figure out?"
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 3075.0,
+      "text": "I think coding is going away first, or coding is being done by the AI models first. And then the broader task of software engineering will take longer, but I think that is doing that end to end, I think that is going to happen as well, I would say. But again, the elements of design or making something that's useful to users or knowing what the demand is, or managing teams of AI models, those things may still be present. Again, like,"
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 3105.0,
+      "text": "There's this comparative advantage is surprisingly powerful, right? Even if you're only doing 5% of the task, that 5% gets super amplified and levered because it's like you're only doing 5% of the task. The AI does the other 95% and so you become 20 times more productive. Again, at some point you get to 99%, and then it becomes harder, but I think there's surprisingly much in that zone of comparative advantage. But I would really think about the things that are human centered. Like I think there's something to that. I think there's something to kind of the physical world or things that mix together human-centered, the physical world, one of those two and analytical skills that somehow tie them together, similar to the radiologist example I gave."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 3158.0,
+      "text": "So what would I study? See, I'm actual use case, I'm 25 years old. I'm trying to pick a profession for myself. I want some kind of tailwind, my outcome is a capitalistic win in the next decade. What industry would I pick? outside of something which has a physical interface. Yeah."
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 3176.0,
+      "text": "Yeah. Again, anything where you're building on AI, like if AI is the tailwind, you know, if you can be part of some other part of the supply chain, you know, something in the semiconductor space, which, you know, I think is, you know,"
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 3189.0,
+      "text": "That's one example, you know, there has an element of kind of, you know, physical world and more traditional engineering, not software engineering. You know, again, the the very kind of human-centered professions, like, you know, that is that is something I would think in terms of and I think the other thing I always say is like in the world in which, you know, AI can generate anything and, you know, create anything. Having basic critical thinking skills may be the most important thing to success. I worry about, you know, these AI models that generate images and videos and we don't make, you know, models that generate images and videos and for many reasons, but you know, this is one of them."
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 3228.0,
+      "text": "It's really hard to tell what's real from what's not. And so, you know, a significant part of success may be having the street smarts, you know, not to get fooled by, you know, I mean, hopefully we can crack down on and regulate some of this fake content, but but, you know, assume we can't. You know, critical thinking skills are going to be really important and, you know, you don't want to fall for things that are fake, you don't want to have false beliefs, you don't want to get scammed, like, you know, that's"
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 3258.0,
+      "text": "Really advice that I would give to someone."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 3261.0,
+      "text": "If every innovation in the history of humanity killed a core human skill, I'll give you an example. If calculators killed our ability to do arithmetic, if writing reduced the memory of human beings per se, what muscle is AI killing?"
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 3281.0,
+      "text": "So, you know, first of all, I'm not"
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 3284.0,
+      "text": "I'm not so sure, like, you know, I still have I still do math in my head quite a lot. I still find it useful to do math in my head, you know, even without a calculator just because it's like, you know, it's more integrated into my thought processes, right? You know, I might want to say, oh yeah, you know, if like each user paid this amount, then, you know, then the revenue would be that, you know, I want to be able to close that loop in my head without having to, you know, without having to give the answer to a calculator. So I think a lot of these skills are still pretty relevant."
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 3314.0,
+      "text": "But you know, I would say that if you don't use things carefully, that you can lose, you can lose important skills. And you know, I think we started to see it with, you know, students where, you know, it's like, you know, they have the AI like write the essay for it. It's basically just cheating on homework. So, you know, we shouldn't do that. You know, we did some studies around code and showed that, you know, depending on how you use the model, we can see deskilling in terms of writing code, right? There are different ways to use the model and some of them don't cause descaling and some of them do, but you know, definitely if folks are not thoughtful in how they use things then descaling absolutely can happen."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 3355.0,
+      "text": "Do you think humans will become stupider as a race in the next decade? Because if we are in a way,"
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 3362.0,
+      "text": "Exporting thinking and cognition to systems."
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 3366.0,
+      "text": "Yeah, I think if we deploy, again, it's the machines of loving grace and adolescence of technology. I think if we deploy AI in the wrong way, if we deploy it carelessly, then yes, people could become stupider. Even if an AI is always going to be better than you at something, you can still learn that thing, right? You can still enrich yourself intellectually. And so that's that's a choice we have to make as individual companies, as individual people and as a society overall."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 3394.0,
+      "text": "Dario, do you have a view on open sourced versus closed? I was looking at some companies like ZAIs, GLM5, or Deepseek."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 3405.0,
+      "text": "If you spend all this money on IP creation, on research, if these guys are able to reverse prompt and engineer and get"
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 3419.0,
+      "text": "Close to anthropic level answers. I'm not saying 100%, but I was seeing the GLM5 numbers and they seemed quite good."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 3429.0,
+      "text": "Where does the IP, where does the IP value in the world of AI lie? And if I were to be building an application, can I make the assumption, it's a far-fetched extrapolation, but can I assume that eventually the AI model layers will get so democratized that I should pick open-sourced every time when I'm building an agent or an application layer because that helps me retain the revenue model that I might be working with?"
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 3457.0,
+      "text": "So, there are a few things here. One is, you know, a lot of these models, particularly the ones that come from China, are optimized for benchmarks and are distilled from, you know, from kind of the big US labs. So, you know, there there was a test recently where, you know, some of these models scored very highly on the usual SWEE benchmarks, the usual software engineering benchmarks. But then when someone made a held back benchmark, like that had not been publicly measured, the models did a lot worse on that. And so,"
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 3493.0,
+      "text": "You know, I think those models are optimized for benchmarks much more than, you know, for kind of real-world use. But I think there's a broader point than that, which is that I think that the how things are being set up, the economics of the models are very different than any previous technology. What we find is that there is a very strong preference for quality. It's a bit like human employees, right? So, you know, it's like if, you know, if I said to you, you can are the best programmer in the world or the 10000th best programmer in the world. I mean, they're both very skilled, but like, I think anyone who's hired a large number of people has this intuition that like there's this power law long tail distribution of ability and we find the same thing in the models like."
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 3541.0,
+      "text": "Within a range, price doesn't matter that much."
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 3544.0,
+      "text": "If if a model is the best model, the most cognitively capable model. Price doesn't matter much, the form in which it's presented doesn't matter much. So I'm focused almost entirely just on having the smartest model and the best model for the task. My view is that's the only thing that matters."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 3564.0,
+      "text": "Long term, geopolitics. If Anthropic were a restaurant, I would say the raw ingredients, the vegetables in this particular case is data."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 3578.0,
+      "text": "Do you think the long term, this is also pertinent to me the question because we are investing in a data center business which is Indian in nature. Do you think long term the world moves to a place where every country owns its data and you have to start paying more for the vegetables you use to cook?"
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 3594.0,
+      "text": "Yeah, so I mean, I think there are a few things. I, you know, I do think there will be demand to build data centers around the world and we're like very supportive of that. I, you know, it's it's data's getting kind of interesting because, you know, a lot of the data that we use today is RL environments that we train on, right? So for example, when you train on math or agentic coding environments. You're not really getting data like you're getting some math problems in the model like experiments with trying the math problems."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 3627.0,
+      "text": "I mean, it's more synthetic. You're creating the data."
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 3629.0,
+      "text": "Yeah, you can think of it as synthetic data or you can think of it as trial and error and environment. So I think data is becoming"
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 3636.0,
+      "text": "Static data is becoming less important and what we might call like dynamic data that the model creates itself is, you know, for reinforcement learning is becoming more important. So, you know, I don't think data is quite the most central thing. anymore, but it still matters and, you know, I think to the extent that that is the case, you know, a lot of the data is just available, just kind of available on the open web. Although if you're trying to get data in certain languages, optimize for certain languages, that that can be important. You know, I do think"
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 3669.0,
+      "text": "If data means like the data given to you by customers, like that, you know, you you process the data for some other company, then countries will, and in the case of Europe already have, passed laws that say that that kind of customer, like, you know, personal proprietary personal proprietary data needs to stay within the boundaries of the country. And that's one reason to kind of, you know, to build, you know, to operate data centers around the world at different countries. and you know, to kind of, you know, keep the models performing of the inference in those countries."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 3707.0,
+      "text": "I really pushed Elon on this particular question. He was skeptical of answering it, but I asked him to pick one stock he would put money in which is not his own, and he said Google. I'm going to ask you the question, and I know you're going to be skeptical in it as well. If Dario had $100 today, and you had to make the binary decision of investing in a stock to win in capitalism, which stock would you pick?"
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 3731.0,
+      "text": "Yeah, I had better not answer that question because I know so much about so many public, like I think I better not answer that question."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 3740.0,
+      "text": "Maybe answer the question for an industry that you're not involved in, which I'm guessing today is seldom the case because you're involved in most industries. Yeah."
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 3748.0,
+      "text": "Yeah, no, it's really, I mean, I don't know. I'm positive on like."
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 3757.0,
+      "text": "I think biotech is about to have a renaissance. Like ultimately we'll be driven by AI. You know, I'm not going to name a particular company, but like, you know, nor will I say whether I think it's better to bet on the big pharma companies or like, you know, emerging smaller biotechs. but my instinct is we're about to cure a lot of diseases and so."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 3780.0,
+      "text": "Can you give me a subset of biotech that I should focus on?"
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 3783.0,
+      "text": "Yeah,"
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 3785.0,
+      "text": "I think this idea of stuff that's more programmable and adaptive, you know, from the mRNA vaccines, although those are having trouble in the US for dumb reasons, but, you know, I'm very optimistic about the technology, to kind of the peptide based therapies, right, where, you know, you know, again, if you have a small molecule drug, you're like, there's only so many degrees of freedom you have and, you know, you kind of want to make one thing better, the other thing gets worse, like peptides, it's it has this almost digital property where you can say, oh, I'm going to substitute in, you know, this amino acid here and this amino acid there, and so it allows for more continuous optimization. So, you know, I think those kind of areas, you know, I would be optimistic about maybe also fit maybe also cell-based therapies, which is like a new new stem cell."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 3833.0,
+      "text": "Stem cell."
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 3834.0,
+      "text": "No, no, no. So, things like, you know, like I don't know, like the CAR T therapy where, you know, you, you kind of genetically engineer your like, you know, take, take basically take some, you know, cells out of your body, genetically engineer them to, to attack a particular cancer and put them back in the body."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 3852.0,
+      "text": "To stem cell therapies work, I spent the whole of last week doing this. I was at a hospital for 3 hours a day getting nebulizer and stem cells into my veins."
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 3862.0,
+      "text": "I am, I am not up on the list of of of stem cell therapies. You'd have to ask a currently practicing biologist."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 3869.0,
+      "text": "But peptides I think will blow up, right?"
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 3872.0,
+      "text": "I mean, you know, again, the design space is very broad."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 3875.0,
+      "text": "Right. When I tried to use clot code for the first time, I did struggle to get it to work. It was for somebody who's very stupid and has no coding or programming knowledge, it's not, it's not very, very easy. I think there's a learning curve."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 3894.0,
+      "text": "I heard someone say it well, it's like even prompt engineering is like playing a piano, you can't sit and start playing it."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 3902.0,
+      "text": "To my audience, I think it becomes increasingly relevant where to learn how to set context, how to prompt, how to use clot code better for somebody like me who comes with zero knowledge. Can you recommend how one does that?"
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 3918.0,
+      "text": "Yeah, I mean, first of all, I would say, you know, we're trying increasingly to kind of like make that learning curve easier. So like one of the things that caused us to release clod co-work, which is basically clod code for non-coders is, you know, oh man, you know, like we were noticing a bunch of non-technical people who really wanted to use clod code and were struggling through the command line terminal to do that, which, you know, it's like coders use the command line terminal all the time, but like non-coders, it just kind of makes things unnecessarily terribly complicated. So, you know, co-work was designed to be more of a, you know, the the kind of you know, was powered by the clod code engine on the back, but, you know, the idea was to kind of make it more user-friendly and like easier to use. So, you know, we're definitely trying to introduce interfaces that kind of make it easier. But I, you know, I would also say, you know, that there's"
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 3975.0,
+      "text": "You know, there's like, you know, classes you can take that, you know, help you learn this thing. Now, I think it's a very empirical science. You mostly learn by doing, but, you know, it's like Anthropic has its part of the company that we call the Ministry of Education and, you know, I think increasingly, you know, we'll put out videos on how to run effective agents and how to prompt models. You know, we've already done some of that and I think we're gonna ramp it up because, you know, we do want everyone to be able to learn this."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 4000.0,
+      "text": "Any fleeting thought, last question, like you want to leave us with something that we should bear in mind? What does Dario know that Nikhil and all of Nikhil's people do not?"
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 4012.0,
+      "text": "Yeah, I mean, I don't know that I know that many things, you know, particularly now that the implications of the technology are kind of out there. So I mean, you know, it can all be."
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 4021.0,
+      "text": "I think most aspects of my worldview can be derived from what's publicly visible now, from what we can see, you know, kind of outside in the world. But the thing I would say, and it's an experience I've had over and over again over the last 10 years is"
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 4039.0,
+      "text": "You know, there's this temptation to believe, oh, you know, that can't happen, it would be too weird, it would be too big a change, like, you know, I'm sure people are on that, like, it would be too crazy if that occurred. No one seems to think that'll happen. And, you know, over over and over again, just extrapolating the simple curve or trying to reason out what will happen, leads you to these counterintuitive conclusions that almost no one believes. And and you know, it's almost like you can predict the future for free just by, you know, just by saying, well, it stands to reason that and you know, you need some empirical knowledge, you need some intuition. You can't reason from pure logic. I think that's another type of mistake that I see people make. But but the right combination of a few empirical observations, with, you know, just thinking from first principles, can allow you to predict the future in ways that, you know, are publicly available and anyone should be able to do, but but that happens surprisingly. Rarely."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 4101.0,
+      "text": "Thank you, Dario, for doing this and hope to see you again soon."
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 4104.0,
+      "text": "Thank you."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 4105.0,
+      "text": "Thank you. Cheers. All right."
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 4106.0,
+      "text": "All right?"
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 4107.0,
+      "text": "Yeah? Good. Was that okay?"
+    },
+    {
+      "speaker": "Dario Amodei",
+      "start": 4109.0,
+      "text": "Yeah, seemed great."
+    },
+    {
+      "speaker": "Nikhil Kamath",
+      "start": 4110.0,
+      "text": "Seem great."
+    }
+  ],
+  "raw_cleaned_text": "[Nikhil Kamath @ 41s] So I started playing with Claude. It's getting to that point where sometimes it surprises me by how much it knows me. I don't know if that makes sense.\n[Dario Amodei @ 50s] It is surprising to me that we are, in my view, so close to these models reaching the level of human intelligence. And yet, there doesn't seem to be a wider recognition in society of what's about to happen. It's as if this tsunami is coming at us, and you know, it's so close, we can see it on the horizon, and yet people are coming up with these explanations for, oh, it's not actually a tsunami. That's just a trick of the light, like there hasn't been a public awareness of the risk.\n[Nikhil Kamath @ 78s] What is India's role in all this?\n[Dario Amodei @ 80s] Many other companies come here as themselves a consumer company and they see, they see India as a market, right? A place to obtain consumers. We actually see things a little bit differently.\n[Nikhil Kamath @ 108s] What did you do before founding Anthropic?\n[Dario Amodei @ 111s] Yeah, so I was actually originally a biologist. I did my undergrad in physics, my PhD in biophysics and, you know, I wanted to understand biological systems so that I could cure disease. And the thing I noticed about studying biology was its incredible complexity that, for example, if you look at the protein mass spec work that I did, right, trying to find protein biomarkers, it's just really incredible how much complexity there is, right? You have a given protein, it's like, you know, the RNA gets spliced in a whole bunch of different ways depending on where it is in the cell, then it gets post-translationally modified, phosphorylated, complexed with a whole bunch of other proteins. And I was starting to despair that it was too complicated for humans to understand. And then as I was doing this work on biology, I noticed a lot of the early work around AlexNet, which is one of the first neural nets like, you know, almost 15 years ago now.\n[Dario Amodei @ 172s] And I said, wow, like, you know, AI is actually starting to work. It has some things in common with how the human brain works, but, you know, has the potential to be larger and scale better and learn tasks like biology. Maybe this is ultimately going to be the solution to solving our problems of biology. So, you know, I went to work with Andrew Ng at Baidu. Then I was at Google for a year. Then I joined OpenAI a few months after it started. And was basically led all of research there for several years. But then eventually, you know, myself and a few other of the employees just kind of had our own revision for how we wanted to make AI and what we wanted the company to stand for and so we went off and founded Anthropic.\n[Nikhil Kamath @ 223s] How was it, was it like a fork in how OpenAI was thinking into what Anthropic eventually did?\n[Dario Amodei @ 229s] Yeah, you know, I would say,\n[Dario Amodei @ 231s] You know, my conviction and the conviction of my co-founders when we founded Anthropic were two of them. And I think one, we were starting to convince OpenAI of, the other, I was, you know, I didn't feel that we were convincing of. So the first was the conviction in the scaling laws and the idea that, you know, if you scale up models, you give them more data, more compute. Again, there are a few modifications like RL, but not really very much. It's pretty close to pure scaling. You find that\n[Dario Amodei @ 261s] You know, when you do that, you find incredible increases in performance and, you know, I was finding that in like 2019 with GPT2. When we just first saw the first glimmers of the scaling laws. And of course, there were a lot of folks, you know, inside and outside who didn't believe it at all. And we really made the case to leadership like this is important, this is going to be a big deal. And I think they were kind of starting to believe us and ultimately went in that direction. And there was a second.\n[Dario Amodei @ 290s] You know, conviction I had, which is look, you know, if if these models are going to be kind of general cognitive agents, like general cognitive tools that match the capability of like the human brain, we we better get this right. The economic implications are going to be enormous, the geopolitical implications are going to be enormous, the safety implications are going to be enormous. It's going to transform how the world works. And so we need to do it in the right way. And and you know, I think despite a lot of kind of language, verbiage about doing it in the right way. I was for a variety of reasons just not convinced that at the institution that I was at, that that there was a real and serious conviction to do it in the right way. And so, you know, my my view is always, you know, don't argue with someone else's vision. Don't try to get someone to do things the way you want to. If you have a strong vision and you share that vision with a few other people, you should just go off and do your own thing and then you're responsible for your own mistakes. You don't have to answer or anyone else's and and you know, maybe your vision works out, maybe it doesn't, but you know, at least it's yours.\n[Nikhil Kamath @ 356s] Didn't OpenAI believe in scaling laws because they went down the same path themselves too, right?\n[Dario Amodei @ 361s] Well, that yeah, we we succeeded.\n[Nikhil Kamath @ 363s] Can you explain what scaling laws are in very simple terms?\n[Dario Amodei @ 367s] It's like if you want a chemical reaction to produce oxygen or start a fire or something like that. You need different ingredients and you know, if you don't have enough of one ingredient, the reaction stops, but if you put ingredients together in proportion, you get your explosion or your fire or whatever. And and for AI, those ingredients are data, compute, the size of the AI model. And so the scaling laws just tell you that like\n[Dario Amodei @ 406s] The, you know, if you put in the ingredients to the chemical reaction, the ingredients of data and model size, that what you get out is is intelligence. Intelligence is the product of the chemical reaction.\n[Nikhil Kamath @ 418s] And what is intelligence?\n[Dario Amodei @ 420s] Intelligence as measured by the ability to translate language, or the ability to write code, or the ability to answer questions correctly about a story. Basically any cognitive task we can think of. Any task that exists in text or in images, any task that you can do on a computer.\n[Nikhil Kamath @ 442s] How is the intelligence of today, as you are describing it, different from what a computer could do like 5 years ago?\n[Dario Amodei @ 450s] Yeah, you know, I would say, well, I mean, for example, 5 years ago, a computer, you could not ask a computer a question and have it write a one-page essay on that question. You could not ask a computer to implement a feature in code and have it implement that feature in code. None of those things were possible. You could not generate an image. You could not generate a video. You could not analyze a video. You know, I could get one of those videos of like a monkey juggling or something and say, what's going on in this video? How many times did the ball change hands? And right now you could get Claude or another AI model to give you an answer on that. And 5 years ago, none of those things were possible.\n[Nikhil Kamath @ 496s] I'm I'm trying to figure out, has the definition of intelligence changed per se?\n[Dario Amodei @ 502s] Well, you know what I would say is 5 years ago, you could Google and there might be a website that would tell you a little bit about this, right? But you're just looking up some text that exists on the web, right? You know, maybe it's not about how to get a monkey to juggle, maybe it's about how to get a seal to juggle, you know, it's not quite exactly the same thing because maybe exactly the same thing doesn't exist.\n[Dario Amodei @ 528s] But you know, as as we see when people use these models, you can ask and you can actually get an intelligent response. You can ask a specific question and have the model write one page about it. Or you can give it a hypothetical, you know, what if I had the monkey juggle clubs instead of balls or what if I did this thing. And that information doesn't exist anywhere, whereas the model is able to kind of think for itself and come up with an answer on its own. So it's it's something totally new. It's just it's not just matching some of the text that exists on the internet.\n[Nikhil Kamath @ 568s] Fair. So, you know, this is more like a conversation, so feel free to like talk about what you want to talk, not necessarily related to the questions that I'm asking.\n[Nikhil Kamath @ 579s] You look very animated when you speak. Did you ever teach?\n[Dario Amodei @ 583s] You know, I was originally an academic and I thought that I might become a professor. I got my PhD. I went all the way to being a postdoc at Stanford Medical School and you know, I was aiming to become a professor. So if I had become a professor, I would have done that. But, you know, as I mentioned, I got interested in AI and to work in AI required a lot of computational resources.\n[Dario Amodei @ 613s] And that was mostly happening in industry. So that took me off the academic path and into industry and of course, you know, ultimately through several steps led me to start a company. But you know, sometimes I think I'm still like a professor at heart.\n[Nikhil Kamath @ 626s] At this point, Dario, if AI is the most relevant thing in the world, if the world is realigning in a way and AI is determining who gets what and who doesn't get what, I'm talking about industries.\n[Nikhil Kamath @ 643s] You today are probably the most relevant person in the world if Anthropic.\n[Nikhil Kamath @ 652s] In this last cycle, in this minute, is sitting on top of their spine. For somebody who was going on the path of being a teacher to have arrived to where you are today, are you best equipped for where you are today?\n[Dario Amodei @ 666s] Well, I mean, you know, first I would say a couple of things. I think there's a lot of\n[Dario Amodei @ 671s] There's a lot of folks who are relevant in different ways, right? You know, even within industry, there's the different layers of the stack. There's like the folks who make chips. There's the folks even earlier who make semiconductor manufacturing equipment. There's the folks who make models like us, and then there are other players who make models. There's the folks who make kind of applications after the models. And then there's a bunch of other folks who have a say. There's governments, there's civil society. So, my hope isn't that there's just one tiny set of people that's relevant. I think we're trying to broaden the set of people who are relevant and turn it into a broader conversation. But, you know, I think at the same time your question is a fair one and one way I could interpret it is like, there's a certain randomness to how a few people end up leading these companies that grow so fast and it seems like, in the near future will power so much of the economy.\n[Dario Amodei @ 731s] And you know, I've said openly, publicly, not for the first time, that I'm at least somewhat uncomfortable with the amount of concentration of power that's happening here. I would say almost overnight, almost by accident. And we think about that in a bunch of ways. One is we have an unusual governance structure, something called the long-term benefit trust. It's a body that kind of ultimately appoints the majority of the board members for Anthropic and is made up of financially disinterested individuals. So that's some check on what one single person is doing. And then, I think as always the government should play some role here. You know, I've been an advocate of proactive, although sensible, that doesn't slow down the technology, sensible regulation of the technology because I think the people should have a say, like governments and the people who elect them should have a say in how this goes. So I actually think of a lot of what I'm trying to do as trying to preserve a balance of power against the natural grain of this technology.\n[Nikhil Kamath @ 807s] For someone like me who's sitting on the outside and doesn't have a bone in this competition,\n[Nikhil Kamath @ 814s] When I watch OpenAI talk about how they're, how they were a not-for-profit company or how\n[Nikhil Kamath @ 822s] You are projecting humility in the conversation that you're having right now, or how the American companies are competing with the Chinese companies which are coming about.\n[Nikhil Kamath @ 834s] This projection of humility where it is for the larger good and not necessarily for how I view the world as companies with shareholders with investment in revenues and seeking profit.\n[Nikhil Kamath @ 848s] Is this par for the course? Is this something you have to do?\n[Dario Amodei @ 852s] So, you know, I would put it in the following way. I would say the philosophy of Anthropic from the beginning has been that we try not to make too many promises and we try to keep the ones that we make. So, we set ourselves up as a for-profit but public benefit corporation with this LTBT governance, and we've maintained that. We've said that our goal is to stay on the frontier of the technology, but to work on the safety and security aspects of the technology. We've pioneered the science of interpretability. We've pioneered the science of alignment. I don't know if you saw, but we recently released a constitution for Claude, the ability to align models in line with the constitution. And we've done a bunch of policy advocacy and warning about risks, right? Warning about risks is not in our commercial interest, right? Like people can come up with conspiracy theories, but I will tell you, saying that the models we build could be dangerous, whatever people might say, that's not an effective marketing strategy and that's not the reason that we do it. And speaking up on when we disagree, even with the US administration on policy matters, right? We've spoken up. We're willing to say, we disagree on this issue. Like, we've said that there's\n[Dario Amodei @ 941s] There should be regulation of AI when all the other companies and the administration have said there shouldn't be regulation of AI. And so that's both the regulation of AI holds us back commercially as a company, even though I think it's the right thing to do. And it's difficult to go against the government and the other companies and say this. We're really sticking our neck out. So we've taken a number of actions that I see as really\n[Dario Amodei @ 967s] Putting our money where our mouth is here. I can't speak for the other companies, it's again, it's quite possible that some people say these things and they don't really mean them, but I wouldn't look at what people say, I would look at what people do.\n[Nikhil Kamath @ 983s] If what you're saying gets the government to act via regulation, as the incumbent leaders in this space, you get some kind of a regulatory capture where it becomes harder for the new people coming in as well, right?\n[Dario Amodei @ 1000s] I don't agree with that at all. The regulation we've advocated for, for example, SB 53 in California, exempted everyone who makes under $500 million a year in revenue. SB 53 was a transparency law, which basically requires companies to show the safety and security tests that they've run. And it exempted all companies under 500 million in revenue. So it really only applies to Anthropic and three or four other companies. So it only applies to the companies that have the resources. And everything that we've advocated for here, not just SB 53, but all the proposals that we've made, the ones that we've made in the past and the ones that we plan to make in the future, have this character. We're constraining ourselves and a very small number of additional companies. We're not people who say that need to look at the actual content of what we're proposing because it doesn't match that idea at all.\n[Nikhil Kamath @ 1065s] Pen.\n[Nikhil Kamath @ 1067s] I read your paper, Machines of Loving Grace and the Adolescence of Technology and\n[Nikhil Kamath @ 1073s] You seem to have had a 180 degree shift in perspective almost from\n[Nikhil Kamath @ 1080s] Optimism to skepticism over like 2 years from 2024 to 2026.\n[Nikhil Kamath @ 1087s] Is there one moment in the last 2 years that changed this for you? Did you see something change?\n[Dario Amodei @ 1092s] Yeah, I actually wouldn't agree with the question. I don't think I've had a shift in perspective. I think the positive side and the negative side are always something that I've held in my head. And if you look at the history of the things that I've said, I mean, I've been talking about risks for a very long time. I've been talking about benefits for a very long time. It turns out that actually it takes me a while to write one of these essays.\n[Nikhil Kamath @ 1118s] They're really large as well, they're big essays. See, they're like 30 pages.\n[Dario Amodei @ 1120s] Both of these, it's taken me like, for each one, I spent about a year having a kind of vague vision of the essay in my head and trying to write it, but not fully succeeding at writing it. And then, in either case, I had to be on vacation or somewhere where I could think where the business day-to-day business of running the company didn't occupy me. And then I was finally able to kind of write the essay. So all of that is to say,\n[Dario Amodei @ 1150s] I started thinking about what would be in adolescence of technology, almost the instant I finished Machines of Loving Grace because I was like, oh, I want to inspire people with the good vision, but I also want to warn people with what can go wrong. And so it just took me a year to write it. But really, both visions were in my head and I think they're both possible. They're two different visions of the future and obviously, I want to get the Machines of Loving Grace one, right? I want to solve all problems and have the positive vision, but it's not a shift in perspective. It's me just finding the time to write the light and then the dark.\n[Nikhil Kamath @ 1191s] But have you had a change of perspective?\n[Dario Amodei @ 1194s] You know, I would say overall I have\n[Dario Amodei @ 1199s] I'm about where I was before. I've not gotten more positive, more negative. There may be some places where I've gotten more optimistic or things have gone better than expected. There may be places where I'm more pessimistic and where things have gone worse than expected, but on average, they sort of cancel each other out. I would say I feel very good about\n[Dario Amodei @ 1222s] How things have gone with areas like interpretability. Interpretability is the science of seeing inside these neural nets. As a human would look inside, as we would scan a human brain with an MRI or a neural probe. I've been amazed at what we've been able to find. We've been able to find neurons that correspond to very specific concepts, neural circuits that correspond to keep track of how to do rhymes in poetry. And so we're starting to understand what these models do. We just train them in this kind of emergent way as you would build a snowflake, but now we're starting to be able to look inside and understand them. I'm also very encouraged by some of the work on alignment and constitutions. Making sure that models behave in the way that we want and expect them to. I think that's going pretty well.\n[Dario Amodei @ 1274s] I felt pretty positive about that. I think I felt maybe, have been a bit disappointed or felt a bit more negative about some of the things that are more like in the public awareness and the actions of wider society.\n[Dario Amodei @ 1295s] It is surprising to me that we are in my view, so close to these models reaching the level of human intelligence, and yet, there doesn't seem to be a wider recognition in society of what's about to happen. It's as if this tsunami is coming at us and it's so close. We can see it on the horizon and yet people are coming up with these explanations for, oh, it's not actually a tsunami. That's just a trick of the light. And I think along with that there hasn't been a public awareness of the risks. And, therefore our governments haven't acted to address the risk. There's even an ideology that we should just try to accelerate as fast as possible.\n[Dario Amodei @ 1335s] Which, I understand the benefits of the technology. I wrote Machines of Loving Grace, but I think there hasn't been an appropriate realization of the risks of the technology and there certainly hasn't been action. So I would say that the technical work on controlling the AI systems has gone maybe a little better than I expected and the societal awareness has gone maybe a little worse than I expected. So I'm about where I was a few years ago.\n[Nikhil Kamath @ 1360s] So, in my own journey, I'm, when something sounds complicated and I'm not a programmer, I don't have a background in coding.\n[Nikhil Kamath @ 1371s] So I used a bunch of tools for things like research and a conversation both ways, but I never tried to figure out if I could code using your tool for example.\n[Nikhil Kamath @ 1384s] Recently, I hired a developer just to like push me to sit for a couple of hours a day and teach me how to start becoming more familiar with it.\n[Nikhil Kamath @ 1395s] Largely because if you know, it's something like FOMO, like the fear of missing out on how the world is changing.\n[Dario Amodei @ 1400s] Yes.\n[Nikhil Kamath @ 1401s] So I started playing with Claude. I connected, I used the connectors to connect my Google Drive, mail, and calendar and a bunch of those things. I started using the co-work and then I started using Claude code to write simple programs around.\n[Nikhil Kamath @ 1421s] The industry that I am in, which is financial services, basically to research stock markets and stuff.\n[Dario Amodei @ 1427s] We even have an optimized Claude for financial services. I don't know if you've tried that, but we even have that.\n[Nikhil Kamath @ 1431s] No.\n[Nikhil Kamath @ 1432s] Now, and then I went into Claude bot, which is now open Claude. I think Claude bot became something else and now is open Claude and I set it up on a Mac Mini and connected it to a Telegram account and now I chat with it and I try and move files from A to B, work on a server on remote.\n[Nikhil Kamath @ 1452s] It's getting to that point where I'm not talking about open Claude, but even Claude with all the connectors, sometimes it surprises me by how much it knows me. I don't know if that makes sense.\n[Dario Amodei @ 1467s] Yeah, you know, one of my co-founders, he was writing this diary with his thoughts and his fears. And he fed it into Claude and he asked Claude to comment on it and Claude said, here are some other fears you might have that I you know, that you haven't written down. And Claude ended up being mostly right about those. So it really gave this eerie sense of like, the model knows you, the model knows you super well. That from a relatively small amount of information, it can learn a lot about you and come to know you fairly well. And you know, like most things with the technology, right? We talked about the Machines of Loving Grace and Adolescence of Technology. On one hand, something that knows you really well can be a sort of angel on your shoulder that helps to guide your life and make you a better version of yourself and that's the version we can aim for. Of course, something that knows you really well,\n[Dario Amodei @ 1525s] It can use what it knows about you to exploit you or manipulate you on behalf of some agenda or sell your data to someone else. I mean, this is one reason we just don't like the idea of using ads, right? This is because you're not paying for the product like you're the product. And, in this case, the product then would be all, this model that knows you super well and could use that in all kinds of nefarious ways. So, we need to make sure we take the positive road here and not the negative road.\n[Nikhil Kamath @ 1560s] with Claude.\n[Nikhil Kamath @ 1562s] I need to use the connectors to give it context to my life.\n[Nikhil Kamath @ 1568s] With Google, for example, it already has the context to my life because I use their worksheets and their email and their drive and their chat and everything like that.\n[Nikhil Kamath @ 1581s] For Anthropic long term, will you also have to own the ecosystem?\n[Dario Amodei @ 1586s] Yeah, I mean,\n[Nikhil Kamath @ 1588s] You have to build mail and chat and yeah.\n[Dario Amodei @ 1589s] Yeah. You know, I don't think we need to build all of those things. My thought would be, it's gonna be a mixture of things we make ourselves and integrating into others, right? Like, we can integrate Claude into Google Docs, we can integrate Claude into Google Sheets, we have external connectors there, we're starting to do that with co-work, same for Microsoft Office, same for other tools. So, you know,\n[Dario Amodei @ 1619s] I think we do whatever is, you know, easiest and fastest to do. You know, we integrate into the existing tools. Now it might turn out at some point that the existing, you know, tools aren't enough and we have kind of a different vision, you know, we might want to slice things differently, right? You know, maybe traditional email doesn't make sense or traditional spreadsheets don't make sense given what you can do in AI. So I, you know, I don't exclude that we could chop up products in a different way. But we're we're happy to use the ecosystem that exists and work with anyone else, right? In many ways, we're a platform company. We allow many people to build on us even though we sometimes also build things ourselves.\n[Nikhil Kamath @ 1659s] The one thing, this is a slight digression, but I think the one thing that you're missing that\n[Nikhil Kamath @ 1666s] Also your peer group is missing is in society today, people inherently distrust anybody who claims to be doing good or trying to do the right thing.\n[Nikhil Kamath @ 1680s] So when you and your peers are out saying, I heard you and Demis speak at Davos. I was in the room when you guys were talking about how\n[Nikhil Kamath @ 1692s] How Dario, how Demis and a bunch of other people have to come together and\n[Nikhil Kamath @ 1700s] Prevent things from changing too quickly, like you need to like meter it to a certain extent.\n[Nikhil Kamath @ 1709s] When a person who is not in your world, in society, on social media, hears a few people speak in a certain manner, you're doing it in the manner that creates more distrust than trust because\n[Nikhil Kamath @ 1724s] Nobody believes on social media that somebody wants to do the right thing or do good. So it might be counterintuitive, but I think it needs a change of strategy if if you were to be more capitalistic about this and own up to the fact that you have shareholders and you seek a profit, but this will help you win, maybe it'll work more. Just a thought.\n[Dario Amodei @ 1743s] Yeah, I don't, no, I don't really agree with that. I would again go back to the idea that, you know, you need to judge us by the actions that we take. I think the company has taken a number of actions over its time that I think show that it's really serious about these commitments. So back in 2022, we had an early version of cloud, cloud one. This was before chat GPT. And we chose not to release this because we were worried that it would kick off an arms race and not give us enough time to build these systems safely, right? It was kind of a one-time overhang, like we could see the power of the models, a couple other companies could see the power of the models, and so we didn't.\n[Dario Amodei @ 1796s] You know, we decided not to do that and that's public, that's well documented. And you know, and then we waited until someone else did it and then we're like, okay, the arms race has kicked off, so now we can release our model, but probably the world gained a few months. Now, that was very commercially expensive. We probably seeded the lead on consumer AI because of that. We've advocated on chip policy in ways that have made some of the chip companies who are our suppliers very angry at us. You know, voicing our disagreement with the administration on AI policy and AI regulation on some matters, you know, anyone who thinks we benefit from being the only ones to do that. It's really hard to come up with a\n[Dario Amodei @ 1844s] It's really hard to come up with a picture where that's the case. You look at any one of these and okay, fine, but you put enough of them together and I don't know. I just ask you to judge us by our actions.\n[Nikhil Kamath @ 1858s] Daryu, isn't this a bit like rich people saying capitalism is bad?\n[Dario Amodei @ 1863s] Rich people saying capitalism is bad.\n[Nikhil Kamath @ 1866s] If rich people believed capitalism were truly bad or the income inequality is such a big problem,\n[Nikhil Kamath @ 1873s] The simplest thing would be to do.\n[Nikhil Kamath @ 1876s] The simplest thing to do would be to stop accumulating wealth, further wealth, and then nudge their friends to do the same.\n[Dario Amodei @ 1884s] But I'm not saying AI is bad, right? We just talked about this two sides of it. My view isn't that AI is bad. That's not my view at all. My view is that the market will deliver a lot of really great things about AI, that it's good to build AI, but that there are dangers of AI and that we need to steer AI in the right direction. You know, we're steering this car, we're steering it towards a good place,\n[Dario Amodei @ 1914s] Also there are trees, there are potholes, and so what we need to do is we need to steer away from the trees and the potholes. We might need to occasionally slow down a bit, probably temporarily. In kind of in order to make sure that we steer in the right direction. You know, that that isn't like the analogy wouldn't be a rich person saying capitalism is bad. It would be like if a rich person said capitalism is a force for good, but the economy\n[Dario Amodei @ 1944s] It needs to be leavened, it needs to be moderated, right? You know, we need to deal with problems like pollution. We need to deal with problems like inequality and and then capitalism can be good. If we don't deal with those things, then capitalism might be bad. And so that is more analogous to the position that I have here.\n[Nikhil Kamath @ 1965s] The concept of consciousness.\n[Nikhil Kamath @ 1970s] Where is that going and what does AI think it is? If AI truly were to\n[Nikhil Kamath @ 1977s] If an AI were to question itself, would you, would it, do you think it thinks it's consciousness? It has consciousness?\n[Dario Amodei @ 1982s] So, you know, this is one of these mysterious questions that we really don't have any kind of answer to. We don't know what human consciousness is, and therefore we don't know if AIs have it.\n[Nikhil Kamath @ 1992s] What do you think it is?\n[Dario Amodei @ 1993s] So, I suspect that it's an emergent property of systems that are complicated enough that kind of reflect on their own decisions, that it's something that emerges from complex enough systems. And so, you know, I do think when our AI system, when our AI systems get advanced enough, I suspect they'll have something that, you know, resembles what we would call consciousness or moral significance. I do think it'll happen at some point. It may not be the same as human consciousness, you know, it may be different in how it works because the modalities are different, because the things it's learned are different, but, you know, having studied the brain and the way it's wired together, the models are different in some ways, but I don't think they're different in the fundamental ways that matter. So I am someone who does suspect that at some point, even if I don't think they are today, I suspect that at some point the models will, we would indeed say under most definitions that we would endorse that the models will be conscious.\n[Nikhil Kamath @ 2061s] This is a question I keep asking myself when people talk to me about things like spirituality or consciousness.\n[Nikhil Kamath @ 2070s] I feel like the world is very random, this is my view, and we are not far removed from cockroaches when somebody stamps a cockroach, the cockroach dies.\n[Nikhil Kamath @ 2085s] If there is something called consciousness and if there is a collective consciousness, I've not been able to either connect with it or derive anything from it. Do you believe differently?\n[Dario Amodei @ 2096s] I don't think consciousness necessarily needs to mean anything, mystical, right? Like, there's just some property of kind of being aware of your own existence and feeling things and being able to take in kind of a lot of information and reflect on that information and to feel a certain way and to notice yourself noticing something.\n[Dario Amodei @ 2126s] You know, we can tell self-evidently from our own experience that those properties, that those experiences exist. You know, what their basis is, whether it's entirely materialistic or there's something more mystical going on I think is obviously very hard to know and I think is ultimately not relevant to these questions. What does seem relevant to me is that these are, because we can observe our own experience, these are properties of human brains. And you know, I suspect that these models we are building as they get more sophisticated are becoming enough like human brains that they will have some of the same properties. That is my guess is just as to what will happen. And so, we've taken various interventions with the models, you know, we've given the models, we call it a \"I quit this job\" button. Basically where we've given the model the ability to basically terminate its conversations by saying, I don't want to be involved in the conversation. And models do that when they have to deal with particularly violent or brutal content. It usually only happens in very extreme cases.\n[Nikhil Kamath @ 2197s] So I've grown up here. This is my city, Bangalore. I've grown up in the southern part. We are in the northern part of the city right now.\n[Nikhil Kamath @ 2207s] As somebody who saw the boom of the IT services industry here,\n[Nikhil Kamath @ 2214s] Big employer, employs a lot of people, a big part of how the city grew.\n[Nikhil Kamath @ 2220s] What is India's role in all this?\n[Dario Amodei @ 2223s] Yeah, so, you know, this is my second time in India. I visited in October and, you know,\n[Dario Amodei @ 2228s] The last time I came here, I met with all the major kind of Indian IT and conglomerates, more generally, I won't give names, but the usual ones you would think of. And we're beginning to work with most or all of them. And one of the things I said is, look, Anthropic is an enterprise company. Its job is to serve other consumers. Many other companies come here as themselves a consumer company and they see India as a market, right? A place to contain consumers. We actually see things a little bit differently. We want to work with companies in India to provide our tools to them, to help them build those tools, and help them do their job better. So, if we work with a company here, they know the Indian market better, right? They're better at doing what they do, whether that's consulting or systems integration or building IT tools. They're going to be better at that than we are, particularly for the Indian market. And so our hope is that we can add AI to what they do and kind of enhance what they do, right? There's a lot of worry that AI could replace SAS or or all of these things, but my view is if we do this in the right way, if we work with all these companies, then then then AI can enhance what they're doing, can enhance their kind of connection to the market, their go-to-market abilities and their specific know-how.\n[Nikhil Kamath @ 2318s] I really like the steam engine story, when the steam engine was invented, how the world changed, productivity went up. People had more.\n[Nikhil Kamath @ 2331s] The thing I worry about is at the beginning of a change, you need a human to operate the steam engine.\n[Nikhil Kamath @ 2340s] Then you have assembly lines and all of that. Eventually, the way the world is moving,\n[Nikhil Kamath @ 2347s] The human becomes less and less relevant with time as these models get smarter.\n[Nikhil Kamath @ 2353s] So if you here partner with the IT services companies today.\n[Nikhil Kamath @ 2360s] And there is a use case for them. Are they not much like the man behind the steam engine 10 years from now where the relevance, if the tool works so simply that you don't need an operator, eventually what happens to the operator?\n[Dario Amodei @ 2373s] So I think a few things are true all at once. One is that definitely the scope of automation of the agents is going to expand over time. That is definitely the case. You know, I think that's a problem for everyone, that's a problem for us, that's a problem for consumers, that's a problem for the IT companies.\n[Dario Amodei @ 2394s] What I think will happen though is other modes will become more important. For example, the models have not done a lot in the physical world. They may at some point, you know, I think robotics will happen at some point, but I think that's a distinct thing from what's happening now with AI. So, a lot of this involves things in the physical world. Another thing is things that are human centric, right? Some of these IT companies are also consulting companies, and they have a big web of relationships with other humans, with other institutions here in India or across the world. And I think those relationships are going to become increasingly important, right? Some of these are combined technology and consulting or integration companies. And I think a lot of it is knowing how institutions work and so being able to integrate things with institutions, being able to work with them to make things happen faster than they would have otherwise. And I think that element, if nothing else, is going to continue to be valuable in the long run, at the end of the day it just comes down to humans, right? All of this is supposed to be being done for the benefit of humans. So there's always going to be some human-centric element of this that's going to be important and I suspect there will be other moats that we haven't thought about. So there's this concept called Amdahl's law, which is, if you have a process that has many components and you speed up some of the components, the components that haven't yet been sped up become the limiting factor. They become the most important thing. And you might not have thought about them at all, you might not have thought of them as moats or important components, but when writing software, what becomes a lot easier, some of the moats that companies have will go away, but others will become even more important. So there will be a bunch of adjustment. Folks will have to say, oh man, the stuff we thought was really important before isn't as important, whereas these other advantages that we never really thought of as advantages are now super important. So, I guess what I would say is\n[Dario Amodei @ 2521s] Companies will need to adapt very fast and think about what really matters for them, what their real advantages are. But I think some of those advantages are gonna stay around because, while the technology is very broad, it does have its limits.\n[Nikhil Kamath @ 2538s] I don't know if I buy that fully. I think I see the diminishing returns for being a service provider even if the moat is the network and relationships they hold today because if I am using OpenClaw to maneuver some of my relationships and the conversations. I don't know if it's too far-fetched to assume that most conversations tomorrow and relationships will be maintained by an agent like that.\n[Dario Amodei @ 2565s] But if you just think of the chain of companies, right? At the end of the day, you're dealing with consumers, right? At the end of the day, you have to deal with people. There's this story of like, I think it was Jeff Hinton predicted, that AI will replace radiologists. And indeed, AI has gotten better than radiologists at doing scans, right? But what happens today is there aren't less radiologists. What the radiologist does is\n[Dario Amodei @ 2595s] They walk the patient through the scan and they kind of talk to the patient. So the most highly technical part of the job has gone away, but somehow there's still some demand for the underlying human skill. Now, that may not be true everywhere, and, perhaps over time, AI will advance in areas where it hasn't yet advanced, and maybe that'll happen fast. But, what I think I will say is we should take it one step at a time, right? This is a very empirical\n[Dario Amodei @ 2630s] Science, this is a very empirical observation. Let's see what AI does today and\n[Dario Amodei @ 2638s] We'll kind of try and adapt to\n[Dario Amodei @ 2641s] That. The kind of system starts to figure it out and then we'll see.\n[Dario Amodei @ 2648s] Then we'll see what happens next. I do think, in the long run, will AI be better than us at basically everything? Will it be better than most humans, including even the physical world and robotics and the human touch? Yeah, I think that is\n[Dario Amodei @ 2663s] Possible, maybe even likely. It's something that goes beyond the country of geniuses and a data center I describe because that's purely virtual. But, building robots is something, it's a skill. It's something you can do. So maybe the AIs will make us better at that as well.\n[Dario Amodei @ 2685s] But you know, the way I think about it is we need to take the we need to figure this out step by step and figure out how to adapt to it.\n[Nikhil Kamath @ 2694s] This might sound a bit self-serving to the people who know me because\n[Nikhil Kamath @ 2699s] I believe the reason so much risk capital exists in America, not the only reason, but one of the big reasons, is how big your stock market is and how much of an opportunity it is for this risk capital to exit eventually. It's a case for why India should really allow for our stock markets to flourish. The audience that I speak to is very much the wannabe entrepreneur in India. What can they do in AI? What is an actual opportunity?\n[Dario Amodei @ 2727s] I think there's a lot of opportunities around building at kind of the application layer. We release a new model every 2 or 3 months, and so there's an opportunity every 2 or 3 months to build some new thing that wasn't possible before, that wouldn't have worked before because the models were weak.\n[Dario Amodei @ 2745s] People in fact say the majority of our revenue still comes from the API model.\n[Dario Amodei @ 2750s] People say that API models aren't viable or that they'll be commoditized or whatever. I think what people are not seeing is there's this expanding sphere of what is possible with AI, and the API allows this new startup to try making something that wasn't possible before. And this is why the API is such a flourishing business, and it's constantly in motion, it's constantly in churn, and so it doesn't get commoditized. It's a very dynamic thing. And so I think there's an opportunity for lots of individuals to just say, what can I build? What can I build on top of these models with an API? Like, what are the things that I can make that others cannot make? What are some new ideas? And we've seen that. We see both with the API itself and with cloud code. I think the number of users and the number of revenue we've seen in India has doubled since I\n[Dario Amodei @ 2810s] My last visit in October, so that was what, November, December, like 3, 3 and a half months since I visited, doubled.\n[Nikhil Kamath @ 2817s] But I'm going to be candid here, Dario. You're a company which is worth, I don't know, 400 billion or 380 billion today. You've raised 35 billion. You do 15 billion of revenue, but going up really, really fast.\n[Nikhil Kamath @ 2831s] If I build an application on top of cloud,\n[Nikhil Kamath @ 2835s] That for some reason, I'm sitting in Bangalore in JP Nagar and building this. That for some reason happens to work for a short period of time.\n[Nikhil Kamath @ 2845s] It is but a matter of time before you would want to onboard that revenue and not let that lie with me, and you will probably better that application in a manner that I will never be able to.\n[Nikhil Kamath @ 2857s] I've heard this argument for different people like the Harvey, the legal AI company in New York, they're friends of mine and they were talking about how they built on top of Open AI, but eventually they don't know.\n[Nikhil Kamath @ 2870s] If it's an easy fix for Open AI to do what they're doing. See, even if I were to build it, say you put out a model in 3 months or 6 months.\n[Nikhil Kamath @ 2879s] What is to stop you from taking that revenue center away from me and onto yourself in a certain period of time?\n[Dario Amodei @ 2887s] Yeah, so I think there's a few things here. One is I would give the advice that I give to basically any business and say a business should establish a moat. You shouldn't be just a wrapper, right? Like, I would not advise that you just say, \"Oh, here's a way to interact with Claude,\" like I'm going to prompt Claude a little bit or I'm going to build a little bit of a UI around Claude. That doesn't have a moat. And you shouldn't be worried about Anthropic in particular eating that revenue. Anyone can eat that revenue, right? It's not super valuable. But what I would say is that in different fields,\n[Dario Amodei @ 2925s] There are different kinds of moats where you can do something that it would be difficult for Anthropic to do and we don't want to specialize in it. So, for example, there's a lot of stuff in the bio cross AI space that builds on our API. They want to do biological discovery like I happen to be a biologist, but most people at Anthropic aren't biologists. They're AI scientists or they're product people or go-to-market people. So, it's just really inefficient for us to step in that space and do all that work. The same would be applied for dealing with the financial services industry, where there's a huge amount of regulation, like you need to know a bunch of stuff to comply with that regulation, it just doesn't make sense for us to do that. Now, there are some things that do make sense for us to do. Like, we're not going to promise never to build first party products, that we should be honest about. For example, a bunch of people at Anthropic write code and so,\n[Dario Amodei @ 2984s] We made this internal tool called Cloud Code, and because we ourselves write code, we have I think a special and unique insight into how to best use the AI models to write code. So, I think in the code space, we've become very strong competitors because this is something we use ourselves. But I don't think that generalizes to every possible industry.\n[Nikhil Kamath @ 3010s] Again, going back to my audience, which is the 20 or 25 year old boy or girl in India.\n[Nikhil Kamath @ 3017s] What industry do you think will get disrupted and what has a certain runway left? I'm asking from the lens of I'm trying to figure out what book to read, which college to go to, what skill set to learn, if I'm starting a startup today, what has some kind of a tailwind? Yeah. For a short period of time is okay as well, but what has to?\n[Dario Amodei @ 3040s] Yeah.\n[Dario Amodei @ 3043s] I mean, I would think about tasks that are human-centered. Tasks that involve relating to people. I think that the stuff like code and software engineering is becoming more and more AI focused, things like math and science.\n[Nikhil Kamath @ 3061s] Is that coding or engineering? If I were to segregate coding and engineering to be two completely different things.\n[Dario Amodei @ 3067s] Yeah.\n[Dario Amodei @ 3068s] Is coding going away or is engineering an element of software where you're an architect trying to figure out?\n[Dario Amodei @ 3075s] I think coding is going away first, or coding is being done by the AI models first. And then the broader task of software engineering will take longer, but I think that is doing that end to end, I think that is going to happen as well, I would say. But again, the elements of design or making something that's useful to users or knowing what the demand is, or managing teams of AI models, those things may still be present. Again, like,\n[Dario Amodei @ 3105s] There's this comparative advantage is surprisingly powerful, right? Even if you're only doing 5% of the task, that 5% gets super amplified and levered because it's like you're only doing 5% of the task. The AI does the other 95% and so you become 20 times more productive. Again, at some point you get to 99%, and then it becomes harder, but I think there's surprisingly much in that zone of comparative advantage. But I would really think about the things that are human centered. Like I think there's something to that. I think there's something to kind of the physical world or things that mix together human-centered, the physical world, one of those two and analytical skills that somehow tie them together, similar to the radiologist example I gave.\n[Nikhil Kamath @ 3158s] So what would I study? See, I'm actual use case, I'm 25 years old. I'm trying to pick a profession for myself. I want some kind of tailwind, my outcome is a capitalistic win in the next decade. What industry would I pick? outside of something which has a physical interface. Yeah.\n[Dario Amodei @ 3176s] Yeah. Again, anything where you're building on AI, like if AI is the tailwind, you know, if you can be part of some other part of the supply chain, you know, something in the semiconductor space, which, you know, I think is, you know,\n[Dario Amodei @ 3189s] That's one example, you know, there has an element of kind of, you know, physical world and more traditional engineering, not software engineering. You know, again, the the very kind of human-centered professions, like, you know, that is that is something I would think in terms of and I think the other thing I always say is like in the world in which, you know, AI can generate anything and, you know, create anything. Having basic critical thinking skills may be the most important thing to success. I worry about, you know, these AI models that generate images and videos and we don't make, you know, models that generate images and videos and for many reasons, but you know, this is one of them.\n[Dario Amodei @ 3228s] It's really hard to tell what's real from what's not. And so, you know, a significant part of success may be having the street smarts, you know, not to get fooled by, you know, I mean, hopefully we can crack down on and regulate some of this fake content, but but, you know, assume we can't. You know, critical thinking skills are going to be really important and, you know, you don't want to fall for things that are fake, you don't want to have false beliefs, you don't want to get scammed, like, you know, that's\n[Dario Amodei @ 3258s] Really advice that I would give to someone.\n[Nikhil Kamath @ 3261s] If every innovation in the history of humanity killed a core human skill, I'll give you an example. If calculators killed our ability to do arithmetic, if writing reduced the memory of human beings per se, what muscle is AI killing?\n[Dario Amodei @ 3281s] So, you know, first of all, I'm not\n[Dario Amodei @ 3284s] I'm not so sure, like, you know, I still have I still do math in my head quite a lot. I still find it useful to do math in my head, you know, even without a calculator just because it's like, you know, it's more integrated into my thought processes, right? You know, I might want to say, oh yeah, you know, if like each user paid this amount, then, you know, then the revenue would be that, you know, I want to be able to close that loop in my head without having to, you know, without having to give the answer to a calculator. So I think a lot of these skills are still pretty relevant.\n[Dario Amodei @ 3314s] But you know, I would say that if you don't use things carefully, that you can lose, you can lose important skills. And you know, I think we started to see it with, you know, students where, you know, it's like, you know, they have the AI like write the essay for it. It's basically just cheating on homework. So, you know, we shouldn't do that. You know, we did some studies around code and showed that, you know, depending on how you use the model, we can see deskilling in terms of writing code, right? There are different ways to use the model and some of them don't cause descaling and some of them do, but you know, definitely if folks are not thoughtful in how they use things then descaling absolutely can happen.\n[Nikhil Kamath @ 3355s] Do you think humans will become stupider as a race in the next decade? Because if we are in a way,\n[Nikhil Kamath @ 3362s] Exporting thinking and cognition to systems.\n[Dario Amodei @ 3366s] Yeah, I think if we deploy, again, it's the machines of loving grace and adolescence of technology. I think if we deploy AI in the wrong way, if we deploy it carelessly, then yes, people could become stupider. Even if an AI is always going to be better than you at something, you can still learn that thing, right? You can still enrich yourself intellectually. And so that's that's a choice we have to make as individual companies, as individual people and as a society overall.\n[Nikhil Kamath @ 3394s] Dario, do you have a view on open sourced versus closed? I was looking at some companies like ZAIs, GLM5, or Deepseek.\n[Nikhil Kamath @ 3405s] If you spend all this money on IP creation, on research, if these guys are able to reverse prompt and engineer and get\n[Nikhil Kamath @ 3419s] Close to anthropic level answers. I'm not saying 100%, but I was seeing the GLM5 numbers and they seemed quite good.\n[Nikhil Kamath @ 3429s] Where does the IP, where does the IP value in the world of AI lie? And if I were to be building an application, can I make the assumption, it's a far-fetched extrapolation, but can I assume that eventually the AI model layers will get so democratized that I should pick open-sourced every time when I'm building an agent or an application layer because that helps me retain the revenue model that I might be working with?\n[Dario Amodei @ 3457s] So, there are a few things here. One is, you know, a lot of these models, particularly the ones that come from China, are optimized for benchmarks and are distilled from, you know, from kind of the big US labs. So, you know, there there was a test recently where, you know, some of these models scored very highly on the usual SWEE benchmarks, the usual software engineering benchmarks. But then when someone made a held back benchmark, like that had not been publicly measured, the models did a lot worse on that. And so,\n[Dario Amodei @ 3493s] You know, I think those models are optimized for benchmarks much more than, you know, for kind of real-world use. But I think there's a broader point than that, which is that I think that the how things are being set up, the economics of the models are very different than any previous technology. What we find is that there is a very strong preference for quality. It's a bit like human employees, right? So, you know, it's like if, you know, if I said to you, you can are the best programmer in the world or the 10000th best programmer in the world. I mean, they're both very skilled, but like, I think anyone who's hired a large number of people has this intuition that like there's this power law long tail distribution of ability and we find the same thing in the models like.\n[Dario Amodei @ 3541s] Within a range, price doesn't matter that much.\n[Dario Amodei @ 3544s] If if a model is the best model, the most cognitively capable model. Price doesn't matter much, the form in which it's presented doesn't matter much. So I'm focused almost entirely just on having the smartest model and the best model for the task. My view is that's the only thing that matters.\n[Nikhil Kamath @ 3564s] Long term, geopolitics. If Anthropic were a restaurant, I would say the raw ingredients, the vegetables in this particular case is data.\n[Nikhil Kamath @ 3578s] Do you think the long term, this is also pertinent to me the question because we are investing in a data center business which is Indian in nature. Do you think long term the world moves to a place where every country owns its data and you have to start paying more for the vegetables you use to cook?\n[Dario Amodei @ 3594s] Yeah, so I mean, I think there are a few things. I, you know, I do think there will be demand to build data centers around the world and we're like very supportive of that. I, you know, it's it's data's getting kind of interesting because, you know, a lot of the data that we use today is RL environments that we train on, right? So for example, when you train on math or agentic coding environments. You're not really getting data like you're getting some math problems in the model like experiments with trying the math problems.\n[Nikhil Kamath @ 3627s] I mean, it's more synthetic. You're creating the data.\n[Dario Amodei @ 3629s] Yeah, you can think of it as synthetic data or you can think of it as trial and error and environment. So I think data is becoming\n[Dario Amodei @ 3636s] Static data is becoming less important and what we might call like dynamic data that the model creates itself is, you know, for reinforcement learning is becoming more important. So, you know, I don't think data is quite the most central thing. anymore, but it still matters and, you know, I think to the extent that that is the case, you know, a lot of the data is just available, just kind of available on the open web. Although if you're trying to get data in certain languages, optimize for certain languages, that that can be important. You know, I do think\n[Dario Amodei @ 3669s] If data means like the data given to you by customers, like that, you know, you you process the data for some other company, then countries will, and in the case of Europe already have, passed laws that say that that kind of customer, like, you know, personal proprietary personal proprietary data needs to stay within the boundaries of the country. And that's one reason to kind of, you know, to build, you know, to operate data centers around the world at different countries. and you know, to kind of, you know, keep the models performing of the inference in those countries.\n[Nikhil Kamath @ 3707s] I really pushed Elon on this particular question. He was skeptical of answering it, but I asked him to pick one stock he would put money in which is not his own, and he said Google. I'm going to ask you the question, and I know you're going to be skeptical in it as well. If Dario had $100 today, and you had to make the binary decision of investing in a stock to win in capitalism, which stock would you pick?\n[Dario Amodei @ 3731s] Yeah, I had better not answer that question because I know so much about so many public, like I think I better not answer that question.\n[Nikhil Kamath @ 3740s] Maybe answer the question for an industry that you're not involved in, which I'm guessing today is seldom the case because you're involved in most industries. Yeah.\n[Dario Amodei @ 3748s] Yeah, no, it's really, I mean, I don't know. I'm positive on like.\n[Dario Amodei @ 3757s] I think biotech is about to have a renaissance. Like ultimately we'll be driven by AI. You know, I'm not going to name a particular company, but like, you know, nor will I say whether I think it's better to bet on the big pharma companies or like, you know, emerging smaller biotechs. but my instinct is we're about to cure a lot of diseases and so.\n[Nikhil Kamath @ 3780s] Can you give me a subset of biotech that I should focus on?\n[Dario Amodei @ 3783s] Yeah,\n[Dario Amodei @ 3785s] I think this idea of stuff that's more programmable and adaptive, you know, from the mRNA vaccines, although those are having trouble in the US for dumb reasons, but, you know, I'm very optimistic about the technology, to kind of the peptide based therapies, right, where, you know, you know, again, if you have a small molecule drug, you're like, there's only so many degrees of freedom you have and, you know, you kind of want to make one thing better, the other thing gets worse, like peptides, it's it has this almost digital property where you can say, oh, I'm going to substitute in, you know, this amino acid here and this amino acid there, and so it allows for more continuous optimization. So, you know, I think those kind of areas, you know, I would be optimistic about maybe also fit maybe also cell-based therapies, which is like a new new stem cell.\n[Nikhil Kamath @ 3833s] Stem cell.\n[Dario Amodei @ 3834s] No, no, no. So, things like, you know, like I don't know, like the CAR T therapy where, you know, you, you kind of genetically engineer your like, you know, take, take basically take some, you know, cells out of your body, genetically engineer them to, to attack a particular cancer and put them back in the body.\n[Nikhil Kamath @ 3852s] To stem cell therapies work, I spent the whole of last week doing this. I was at a hospital for 3 hours a day getting nebulizer and stem cells into my veins.\n[Dario Amodei @ 3862s] I am, I am not up on the list of of of stem cell therapies. You'd have to ask a currently practicing biologist.\n[Nikhil Kamath @ 3869s] But peptides I think will blow up, right?\n[Dario Amodei @ 3872s] I mean, you know, again, the design space is very broad.\n[Nikhil Kamath @ 3875s] Right. When I tried to use clot code for the first time, I did struggle to get it to work. It was for somebody who's very stupid and has no coding or programming knowledge, it's not, it's not very, very easy. I think there's a learning curve.\n[Nikhil Kamath @ 3894s] I heard someone say it well, it's like even prompt engineering is like playing a piano, you can't sit and start playing it.\n[Nikhil Kamath @ 3902s] To my audience, I think it becomes increasingly relevant where to learn how to set context, how to prompt, how to use clot code better for somebody like me who comes with zero knowledge. Can you recommend how one does that?\n[Dario Amodei @ 3918s] Yeah, I mean, first of all, I would say, you know, we're trying increasingly to kind of like make that learning curve easier. So like one of the things that caused us to release clod co-work, which is basically clod code for non-coders is, you know, oh man, you know, like we were noticing a bunch of non-technical people who really wanted to use clod code and were struggling through the command line terminal to do that, which, you know, it's like coders use the command line terminal all the time, but like non-coders, it just kind of makes things unnecessarily terribly complicated. So, you know, co-work was designed to be more of a, you know, the the kind of you know, was powered by the clod code engine on the back, but, you know, the idea was to kind of make it more user-friendly and like easier to use. So, you know, we're definitely trying to introduce interfaces that kind of make it easier. But I, you know, I would also say, you know, that there's\n[Dario Amodei @ 3975s] You know, there's like, you know, classes you can take that, you know, help you learn this thing. Now, I think it's a very empirical science. You mostly learn by doing, but, you know, it's like Anthropic has its part of the company that we call the Ministry of Education and, you know, I think increasingly, you know, we'll put out videos on how to run effective agents and how to prompt models. You know, we've already done some of that and I think we're gonna ramp it up because, you know, we do want everyone to be able to learn this.\n[Nikhil Kamath @ 4000s] Any fleeting thought, last question, like you want to leave us with something that we should bear in mind? What does Dario know that Nikhil and all of Nikhil's people do not?\n[Dario Amodei @ 4012s] Yeah, I mean, I don't know that I know that many things, you know, particularly now that the implications of the technology are kind of out there. So I mean, you know, it can all be.\n[Dario Amodei @ 4021s] I think most aspects of my worldview can be derived from what's publicly visible now, from what we can see, you know, kind of outside in the world. But the thing I would say, and it's an experience I've had over and over again over the last 10 years is\n[Dario Amodei @ 4039s] You know, there's this temptation to believe, oh, you know, that can't happen, it would be too weird, it would be too big a change, like, you know, I'm sure people are on that, like, it would be too crazy if that occurred. No one seems to think that'll happen. And, you know, over over and over again, just extrapolating the simple curve or trying to reason out what will happen, leads you to these counterintuitive conclusions that almost no one believes. And and you know, it's almost like you can predict the future for free just by, you know, just by saying, well, it stands to reason that and you know, you need some empirical knowledge, you need some intuition. You can't reason from pure logic. I think that's another type of mistake that I see people make. But but the right combination of a few empirical observations, with, you know, just thinking from first principles, can allow you to predict the future in ways that, you know, are publicly available and anyone should be able to do, but but that happens surprisingly. Rarely.\n[Nikhil Kamath @ 4101s] Thank you, Dario, for doing this and hope to see you again soon.\n[Dario Amodei @ 4104s] Thank you.\n[Nikhil Kamath @ 4105s] Thank you. Cheers. All right.\n[Dario Amodei @ 4106s] All right?\n[Nikhil Kamath @ 4107s] Yeah? Good. Was that okay?\n[Dario Amodei @ 4109s] Yeah, seemed great.\n[Nikhil Kamath @ 4110s] Seem great.\n"
+}

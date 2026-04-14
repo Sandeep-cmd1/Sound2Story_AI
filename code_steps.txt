@@ -1,0 +1,61 @@
+(1m45s) 1) youtube url import and audio file save
+() 2) transcribe audio file using sarvam AI api call 
+    - can add options of diarization, language, # of speakers
+3) setup gemini client and test api call
+4) add speaker names  instead of speaker_id to transcript and re-save 
+    transcript with speaker name, text, start & end time
+5) sarvam ai transcription can cut a speaker text in mid, so merge
+    such sentences together
+CHECKPOINT1 -> Save speaker mapped merged transcript 
+6) divide transcript entries into batches to process each batches   
+    at once by LLM (due to limited context window)
+    process means clean each entry by removing fillers, false start, etc
+7) LLM output is text, so re-parse it into JSON format with 
+    speaker, text, start time entries
+8) Compare how many entries dropped by LLM due to removal of
+    fillers, flase starts, etc. Also check avg words per entry changes
+    Also check very short entries, entries split mid sentence;
+    Improve entry processing process if too many entries dropped by LLM
+CHECKPOINT2 -> Save processed transcript entries
+9) extract chapters info (title, theme, content) from processed 
+    transcript using LLM api call; clean json output to good format if needed
+10) chunk each chapter content into list of smaller chunks to 
+    prevent overflow of LLM context
+11) send each chunk of a chapter to LLM to convert it into a narrative 
+    paragraph, add relevant explanations, remove conversational
+    markers like he said, I said, collect quotes, flag any fact checks. Give chapter
+    title and theme as a context to LLM
+12) using processed chunks, quotes of each chapter along with title and
+    theme, build complete chapter using LLM call. Next create JSON
+    data for each chapter with title, theme, built chapter text,
+    quotes, fact flags.
+CHECKPOINT3 -> Save above JSON file 
+13) Use LLM to do whole book level editing by send all chapters
+    titles, themes and preview text as a summary of book. To 
+    extract best chapter order, identify repeated ideas, tone 
+    inconsistencies, other editorial advice 
+CHECKPOINT4 -> Save LLM output of editor feedback as JSON format data 
+14) build front and back info of a book using LLM by sending
+    book summary like 13th step and also sending editor feedback 
+    the output of 13th step. Get Json output of foreward, intro,
+    table of contents, conclusion, takeaways per chapter, glossary,
+    author bio, fact check flags
+CHECKPOINT5 -> Save front and back info in JSON format
+15) re-order chapters using editor feedback order using py code
+16) Use LLM to generate book title & sub-title by giving each chapter
+    title and theme as context. Extract output in JSON. Add both 
+    items to front and back JSON info 
+17) add clickable html links of table of contents to front anf back
+    info as a new entry
+18) create a function to aggregate all front info entries line by line
+    at once place in markdown text format
+19) use LLM to generate smooth transitions between chapters by giving
+    prev chapter and current chapters titles and themes as context
+20) add transition dict entry into each existing JSON chapter format with
+    already present entries of title, theme, text, quotes, fact flag
+21) get into JSON of each chapter and output a text of each chapter
+    with (hyperlinked)title, text, transition items
+22) create a function to aggregate all back info entries line by line
+    at once place in markdown text format
+23) add front matter, chapters content and back matter into .md file
+24) convert md content to pdf

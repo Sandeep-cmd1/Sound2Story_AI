@@ -1,0 +1,6 @@
+sarvam_api = 1
+gemini_llm = 3(batch wise transcript cleaning)+1(extract chapters from convo)+8(write prose from chunks of convos of each chapter)
+                +8(re-write entire chapter in organic flow for all 8)+ 1(editor of all content) + 1(front and back matter creation)
+                +1(generate book title and sub-title) + 7(add chapter-wise transition) = Total 30
+
+Total time = 404 sec -> 6.8 mins

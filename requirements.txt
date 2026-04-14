@@ -1,0 +1,7 @@
+ipykernel
+yt-dlp
+python-dotenv
+sarvamai
+google-genai
+nltk
+reportlab
